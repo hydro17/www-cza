@@ -3,10 +3,28 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './components/header/header.component';
+import { BodyComponent } from './components/body/body.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { MenuComponent } from './components/body/menu/menu.component';
+import { SidebarComponent } from './components/body/sidebar/sidebar.component';
+import { MainComponent } from './components/body/main/main.component';
+import { ContactLeftComponent } from './components/header/contact-left/contact-left.component';
+import { ContactRightComponent } from './components/header/contact-right/contact-right.component';
+import { LogoComponent } from './components/header/logo/logo.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    BodyComponent,
+    FooterComponent,
+    MenuComponent,
+    SidebarComponent,
+    MainComponent,
+    ContactLeftComponent,
+    ContactRightComponent,
+    LogoComponent
   ],
   imports: [
     BrowserModule,
