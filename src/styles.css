@@ -4,6 +4,13 @@
   margin: 0;
 }
 
+body {
+  margin: 8px;
+  background-color: #fff9c6;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #734a00;  
+}
+
 .mock {
   background-color: lightgrey;
   padding: 15px;
@@ -14,4 +21,34 @@
   width: 80%;
   margin: 0 auto;
   border: 2px solid red;
+}
+
+a {
+  color: #734a00;  
+  text-decoration: none;
+}
+
+/* 
+* for refactoring - put in header if possible
+*/
+cza-contact-left p, cza-contact-right p {
+  text-align: center;
+  font-size: 0.8em;
+}
+
+/* 
+* for refactoring - put in header if possible
+*/
+cza-contact-left p:not(:last-of-type), cza-contact-right p:not(:last-of-type) {
+  margin-bottom: 0.5em;
+}
+
+/* 
+* for refactoring - put in header if possible
+*/
+cza-contact-left .contact-container, cza-contact-right .contact-container {
+  height:100%;
+  display:flex; 
+  flex-direction:column; 
+  justify-content: center; 
 }

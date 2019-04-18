@@ -12,6 +12,7 @@ import { MainComponent } from './components/body/main/main.component';
 import { ContactLeftComponent } from './components/header/contact-left/contact-left.component';
 import { ContactRightComponent } from './components/header/contact-right/contact-right.component';
 import { LogoComponent } from './components/header/logo/logo.component';
+import { FrameComponent } from './components/frame/frame.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { LogoComponent } from './components/header/logo/logo.component';
     MainComponent,
     ContactLeftComponent,
     ContactRightComponent,
-    LogoComponent
+    LogoComponent,
+    FrameComponent
   ],
   imports: [
     BrowserModule,

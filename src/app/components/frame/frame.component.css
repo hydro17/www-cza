@@ -1,0 +1,69 @@
+.cza-frame {
+  display: grid;
+  grid-template-columns: 15px auto 15px;
+  grid-template-rows: 15px auto 15px;
+  grid-template-areas: 
+    "top-left top-center top-right"
+    "middle-left middle-center middle-right"
+    "bottom-left bottom-center bottom-right";
+}
+
+.top-left {
+  grid-area: top-left;
+  background-image: url(/assets/images/frame-corner-top-left.gif);
+  background-color: red;
+}
+
+.top-center {
+  grid-area: top-center;
+  background-image: url(/assets/images/frame-top.gif);
+  background-color: red;
+}
+
+.top-right {
+  grid-area: top-right;
+  background-image: url(/assets/images/frame-corner-top-right.gif);
+  background-color: red;
+}
+
+.middle-left {
+  grid-area: middle-left;
+  background-image: url(/assets/images/frame-side-left.gif);
+  background-color: red;
+}
+
+.middle-center {
+  grid-area: middle-center;
+  /* display: flex;
+  flex-direction: column; */
+  /* background-color: rgba(255,0,0,0.3); */
+  /* align-items: stretch; */
+  /* padding-bottom: 0.3em; */
+  position: relative;
+  bottom: 1px;
+  right: 1px;
+}
+
+.middle-right {
+  grid-area: middle-right;
+  background-image: url(/assets/images/frame-side-right.gif);
+  background-color: red;
+}
+
+.bottom-left {
+  grid-area: bottom-left;
+  background-image: url(/assets/images/frame-corner-bottom-left.gif);
+  background-color: red;
+}
+
+.bottom-center {
+  grid-area: bottom-center;
+  background-image: url(/assets/images/frame-bottom.gif);
+  background-color: red;
+}
+
+.bottom-right {
+  grid-area: bottom-right;
+  background-image: url(/assets/images/frame-corner-bottom-right.gif);
+  background-color: red;
+}

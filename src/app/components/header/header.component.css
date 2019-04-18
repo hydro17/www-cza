@@ -1,3 +1,27 @@
-/* .mock {
-  height: 50px;
+/* cza-contact-left > cza-frame > p, cza-contact-right > cza-frame > p {
+  text-align: center;
+}
+
+cza-contact-left > p:not(:last-of-type), 
+cza-contact-right > p:not(:last-of-type) {
+  margin-bottom: 0.5em;
 } */
+
+/* .contact {
+  text-align: center;
+  color: green;
+}
+
+.contact:not(:last-of-type) {
+  margin-bottom: 0.5em;
+} */
+
+ /* p {
+  text-align: center;
+  font-size: 0.8em;
+  color: red;
+} */
+
+/* p:not(:last-of-type) {
+  margin-bottom: 0.5em;
+}  */
