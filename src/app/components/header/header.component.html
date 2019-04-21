@@ -8,8 +8,7 @@
     border: 2px dotted green;
   }
 
-  cza-contact-left,
-  cza-contact-right {
+  cza-contact {
     flex-basis: 180px;
   }
 
@@ -18,8 +17,36 @@
   }
 </style>
 
-<p>
-  <cza-contact-left></cza-contact-left>
+<div>
+  <cza-contact>
+    <div class="contact-container">
+      <p>
+        <strong>tel.</strong><br>
+        22 879-92-62
+      </p>
+
+      <p>
+        <strong>fax 24 h</strong><br>
+        22 879-92-32
+      </p>
+
+      <p>e-mail: cza@cza.pl</p>
+    </div>
+  </cza-contact>
+
   <cza-logo></cza-logo>
-  <cza-contact-right></cza-contact-right>
-</p>
+
+  <cza-contact>
+    <div class="contact-container">
+      <p>
+        <strong>Adres Redakcji</strong><br>
+      </p>
+
+      <p>
+        ul. Obarowska 23/2<br>
+        04-337 Warszawa<br>
+        Box 81
+      </p>
+    </div>
+  </cza-contact>
+</div>

@@ -14,6 +14,7 @@ import { ContactRightComponent } from './components/header/contact-right/contact
 import { LogoComponent } from './components/header/logo/logo.component';
 import { FrameComponent } from './components/frame/frame.component';
 import { SidebarCardComponent } from './components/body/sidebar/sidebar-card/sidebar-card.component';
+import { ContactComponent } from './components/header/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { SidebarCardComponent } from './components/body/sidebar/sidebar-card/sid
     ContactRightComponent,
     LogoComponent,
     FrameComponent,
-    SidebarCardComponent
+    SidebarCardComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
