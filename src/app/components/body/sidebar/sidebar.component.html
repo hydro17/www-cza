@@ -2,10 +2,62 @@
   :host>* {
     height: 100%;
   }
+
+  aside {
+    width: 114px;
+  }
+
+  header,
+  footer {
+    text-align: center;
+    font-size: 0.8em;
+  }
+
+  figure {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 6px;
+    margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+
+  figure>img {
+    width: 100%;
+    border: 1px solid gray;
+    box-shadow: 3px 3px 2px rgb(194, 194, 194);
+  }
 </style>
 
 <cza-frame>
   <aside>
+    <!-- sidebar-card start -------------------------->
+    <cza-sidebar-card>
+      <header>
+        "CzA"<br>
+        <span>nr 4(304)/2019</span>
+      </header>
 
+      <figure><img src="http://unsplash.it/150/130" alt=""></figure>
+
+      <footer>
+        <div style="font-size: 0.82em; margin-bottom: 5px">
+          Punktacja MNiSzW
+          2&nbsp;pkt. naukowe
+        </div>
+
+        <a href="#">Spis treści</a>
+      </footer>
+    </cza-sidebar-card>
+
+    <!-- sidebar-card start -------------------------->
+    <cza-sidebar-card>
+      <header>HEADER</header>
+
+      <figure><img src="http://unsplash.it/150/130" alt=""></figure>
+
+      <footer>FOOTER</footer>
+    </cza-sidebar-card>
   </aside>
 </cza-frame>

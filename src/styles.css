@@ -28,8 +28,12 @@ a {
   text-decoration: none;
 }
 
+a:hover{
+  color: #b97a00;
+}
+
 /* 
-* for refactoring - put in header if possible
+* for refactoring - put in the header if possible
 */
 cza-contact-left p, cza-contact-right p {
   text-align: center;
@@ -37,14 +41,14 @@ cza-contact-left p, cza-contact-right p {
 }
 
 /* 
-* for refactoring - put in header if possible
+* for refactoring - put in the header if possible
 */
 cza-contact-left p:not(:last-of-type), cza-contact-right p:not(:last-of-type) {
   margin-bottom: 0.5em;
 }
 
 /* 
-* for refactoring - put in header if possible
+* for refactoring - put in the header if possible
 */
 cza-contact-left .contact-container, cza-contact-right .contact-container {
   height:100%;
