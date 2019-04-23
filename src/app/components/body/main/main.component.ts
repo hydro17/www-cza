@@ -14,6 +14,7 @@ export class MainComponent implements OnInit {
 
   showNextArticle(e) {
     const nextElementSibling = e.target.nextElementSibling;
+    console.log(nextElementSibling.nodeName);
 
     if (nextElementSibling.getAttribute('class') === null) { return; }
     if (nextElementSibling.getAttribute('class').match(/hidden/g) === null) { return; }

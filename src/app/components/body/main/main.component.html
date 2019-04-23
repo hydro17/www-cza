@@ -1,51 +1,124 @@
-<style>
-  /* :host>* {
-    height: 100%;
-  } */
-
-
-  .hidden {
-    opacity: 0;
-  }
-
-  .show {
-    animation: showElement 1s;
-  }
-
-  @keyframes showElement {
-    0% {
-      opacity: 0
-    }
-
-    100% {
-      opacity: 1
-    }
-  }
-
-  article {
-    margin: 5px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #734a00;
-    margin-bottom: 10px;
-  }
-</style>
-
 <cza-frame>
   <main>
     <article class="show" (animationend)="showNextArticle($event)">
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio reiciendis dolorum modi. Maxime eius veniam
-      excepturi, pariatur deleniti molestias, dignissimos et officia suscipit delectus minus minima consectetur, at illo
-      earum!
+      <section class="body center">
+        <a href="#" target="_blank" style="text-align:center"><strong>Wykaz dostępnych publikacji książkowych
+            Wydawnictwa Farmapress przydatnych w ciągłym szkoleniu farmaceutów</strong>
+        </a>
+      </section>
     </article>
 
     <article class="hidden">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima non iure ducimus atque eaque dolorem omnis
-      consequuntur suscipit! Laboriosam incidunt velit maiores, magnam error ad quod dignissimos impedit numquam veniam?
+      <section class="body center">
+        <a href="/assets/documents/cza-prenum-2019-2polr.pdf" target="_blank">
+          <img src="/assets/images/cza-prenum-2019-2polr.jpg" width="437" alt="Prenumerata 'Czasopisma Aptekarskiego'">
+        </a>
+      </section>
     </article>
 
     <article class="hidden">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima non iure ducimus atque eaque dolorem omnis
-      consequuntur suscipit! Laboriosam incidunt velit maiores, magnam error ad quod dignissimos impedit numquam veniam?
+      <section class="body center">
+        <a href="/assets/documents/pacjent-z-bolem-s47.pdf" target="_blank">
+          <img src="/assets/images/pacjent-z-bolem-s47.jpg" width="437"
+            alt="Konferencja 'Pacjent z bólem pod opieką farmaceuty'" style="display:flex">
+        </a>
+
+        <a href="https://opiekaodzaraz.pl/konferencjabol2019" target="_blank"
+          style="background-color: #734A00; color:white; padding:5px 8px; margin: 5px 0 5px 0">Zarezerwuj miejsce /
+          bilet</a>
+
+        <a href="https://opiekaodzaraz.pl/konferencjabol2019" target="_blank">
+          <img src="/assets/images/pacjent-z-bolem.jpg" width="437"
+            alt="Konferencja 'Pacjent z bólem pod opieką farmaceuty'">
+        </a>
+      </section>
+    </article>
+
+    <article>
+      <header>
+        <p class="title">Być albo nie być Ustawy o zawodzie farmaceuty</p>
+      </header>
+
+      <section class="body">
+        <p>
+          Prof. dr hab. Jerzy Masiakowski był pierwszym (w odradzającym się samorządzie aptekarskim), który w 1995 r. na
+          łamach specjalnego wydania "Czasopisma Aptekarskiego" nr 4 (6), s. 13-22 opublikował własny autorski projekt
+          ustawy o zawodzie farmaceuty.
+        </p>
+        <p>
+          Dokument ten spotkał się z ostrą krytyką Naczelnej Rady Aptekarskiej oraz okręgowych izb aptekarskich. Wśród
+          oponentów znaleźli się także prawnicy i ówcześni pracownicy Ministerstwa Zdrowia, którzy zwrócili uwagę
+          Autorowi
+          na cały szereg błędów legislacyjnych. Po kilkunastu miesiącach projekt zwany "Projektem Masiakowskiego" umarł
+          śmiercią naturalną. Jak naszym Czytenikom wiadomo, do tematu powrócono dokładnie po 23 latach w formie
+          nieupublicznianych projektów, tajemniczych dyskusji, poufnych narad i bez konsultacji ze środowiskiem
+          aptekarskim.
+        </p>
+        <p>
+          Obecny projekt Ustawy o Zawodzie farmaceuty przygotowano na 88 stronach, a jego uzasadnienie na 55 stronach.
+          Ani aktualny projekt, ani uzasadnienie nie są na miarę XXI wieku i wymagają dopracowania.
+        </p>
+        <p>
+          Biorąc pod uwagę czas i obowiązującą procedurę legislacyjną, nie istnieją żadne przesłanki, aby parlament
+          obecnej kadencji pochylił się nad projektem ustawy. Tym bardziej, że dokument jeszcze nie wyszedł z
+          Ministerstwa
+          Zdrowia (do czasu wydania niniejszego wydania "Czasopisma Aptekarskiego").
+        </p>
+        <p>
+          Redakcja w okresie ostatniego roku otrzymała od Czytelników szereg uwag dotyczących projektu ustawy.
+          Wskazywano
+          również na występujące braki w definicjach, które mogą wzbudzać wątpliwości i różne interpretacje, np. brak
+          definicji Rady Aptekarskiej i Izby Aptekarskiej, ale za to pojawiła się nowa definicja "okręgowa rada izby
+          aptekarskiej". Takich przykładów jest wiele.
+        </p>
+        <p>
+          Zdziwienie nasze budzi fakt, że w projecie ustawy lansuje się Dobrą Praktykę Dystrybucyjną, a pomija Dobrą
+          Praktykę Apteczną zwaną też Dobrą Praktyką Farmaceutyczną.
+        </p>
+        <p>
+          Do szczegółowej interpretacji nowego projektu Ustawy o Zawodzie farmaceuty powrócimy w kolejnych wydaniach
+          "Czasopisma Aptekarskiego". Redakcja deklaruje zorganizowanie, pod auspicjami Naczelnej Rady Aptekarskiej,
+          debaty na temat nowego projektu Ustawy o Zawodzie farmaceuty, np. w Centrum Prasowym w Warszawie.
+          Liczymy na poparcie inicjatywy
+        </p>
+      </section>
+
+      <footer>
+        <p>>>> "Czasopismo Aptekarskie" nr 4/2018</p>
+        <p>str. 3</p>
+      </footer>
+    </article>
+
+    <article>
+      <header>
+        <p class="title">Opakowanie gwarantem stabilnego i estetycznego leku recepturowego</p>
+        <p class="author-name">dr n. farm. Regina Kasperek-Nowakiewicz</p>
+        <p class="author-position">
+          Specjalista Farmacji Aptecznej, Katedra i Zakład Farmacji Stosowanej, Uniwersytet Medyczny w Lublinie
+        </p>
+      </header>
+
+      <section class="body">
+        <p>
+          W nowoczesnej aptece pacjent powinien zostać zaopatrzony w ładnie, estetycznie zapakowany lek recepturowy,
+          który jednocześnie będzie bezpieczny ze względu na zachowaną trwałość podczas jego stosowania oraz odpowiednią
+          jakość. Przed przystąpieniem do wykonania leku recepturowego farmaceuta wybiera odpowiedni sposób jego
+          przyrządzenia, sprawdza dawki substancji leczniczych, dokładnie odważa składniki leku, przygotowuje sprzęt
+          niezbędny do sporządzenia leku, ale także musi dobrać właściwe opakowanie. W procesie wytwarzania leku
+          recepturowego sprawa wyboru opakowania może wydawać się drugorzędna, jednak należy pamiętać, że ma ono
+          zapewnić odpowiednią trwałość leku, umożliwić jego aplikację, a estetyką wyglądu zachęcić pacjenta do jego
+          stosowania. Zapewnienie odpowiedniej ilości i jakości opakowań dla różnych form leków recepturowych jest
+          konieczne do właściwej organizacji pracy w recepturze. Opakowania farmaceutyczne i materiały przeznaczone do
+          opakowań leków powinny spełniać wymagania zawarte w normach Międzynarodowej Organizacji Normalizacyjnej (ISO)
+          i w farmakopeach. Wymagania normy ISO realizowane są przy uwzględnieniu zasady Dobrej Praktyki Wytwarzania
+          (GMP), dotyczącej produkcji i kontroli produktów leczniczych.
+        </p>
+      </section>
+
+      <footer>
+        <p>>>> szerzej w: "Czasopismo Aptekarskie" nr 3/2019</p>
+        <p>str. 22-26</p>
+      </footer>
     </article>
   </main>
 </cza-frame>
