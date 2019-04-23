@@ -16,10 +16,10 @@ export class MainComponent implements OnInit {
     const nextElementSibling = e.target.nextElementSibling;
 
     if (nextElementSibling.getAttribute('class') === null) { return; }
-    if (nextElementSibling.getAttribute('class').match(/hide/g) === null) { return; }
+    if (nextElementSibling.getAttribute('class').match(/hidden/g) === null) { return; }
 
     nextElementSibling.addEventListener('animationend', this.showNextArticle);
-    nextElementSibling.classList.remove('hide');
+    nextElementSibling.classList.remove('hidden');
     nextElementSibling.classList.add('show');
   }
 
