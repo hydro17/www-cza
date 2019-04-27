@@ -66,6 +66,59 @@
 
   figcaption {
     font-size: 0.8em;
-    text-align: justify;
+    text-align: right;
     margin-top: 0.5em;
+  }
+
+  /* figure > img {
+    width: 100%;
+  } */
+
+  /* .bottom-caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } */
+
+  figure > img {
+    border: 1px solid #734A00;
+  }
+
+  .bottom-caption img {
+    width: 100%;
+  }
+
+  .side-caption {
+    display: flex;
+    align-items: flex-end;
+    /* flex-wrap: wrap; */
+  }
+
+  .center-without-caption {
+    text-align: center;
+  }
+
+  .side-caption figcaption {
+    margin-left: 0.8em;
+    text-align: left;
+  }
+/* 
+  .side-caption img {
+    flex: 0 1 437px;
+  }  */
+
+  .mr-1 {
+    margin-right: 0.8em;
+  }
+
+  .mb-1 {
+    margin-bottom: 0.5em;
+  }
+
+  .mt-1 {
+    margin-top: 0.5em;
+  }
+
+  .fl {
+    float: left;
   }
