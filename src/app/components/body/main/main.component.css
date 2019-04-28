@@ -2,6 +2,10 @@
     height: 100%;
   } */
 
+  main {
+    min-width: 300px;
+  }
+
   .hidden {
     opacity: 0;
   }
@@ -70,48 +74,23 @@
     margin-top: 0.5em;
   }
 
-  /* figure > img {
-    width: 100%;
-  } */
-
-  /* .bottom-caption {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  } */
-
   figure img {
     border: 1px solid #734A00;
   }
   
-  img:not([style*='width']) {
+  /* img:not([style*='width']) {
+    width: 100%;
+    max-width: 400px;
+  } */
+
+  img {
     width: 100%;
     max-width: 400px;
   }
 
-  /* img:not([width]) {
-    width: 100%;
-    max-width: 400px;
-  } */
-
-  /* img:not([style*='width']), img:not[width] {
-    width: 100%;
-    max-width: 400px;
-  } */
-  /* .bottom-caption img {
-    width: 100%;
-  } */
-
-  /* :not(a) > img {
-    width: 100%;
-    max-width: 400px;
-  } */
-
-  /* .side-caption {
-    display: flex;
-    align-items: flex-end;
-    flex-wrap: wrap;
-  } */
+  .img-big {
+    max-width: 500px;
+  }
 
   /* Style of figure and figcaption for width < 1200px 
    * Caption is justified and under image
@@ -124,7 +103,6 @@
 
   figure:not([style*='width']) > figcaption {
     text-align: justify;
-    color: green;
   }
 
   /* Style of figure and figcaption for width >= 1200px 
@@ -140,7 +118,6 @@
     figure:not([style*='width']) > figcaption {
       margin-left: 0.8em;
       text-align: left;
-      color: red;
     }
   }
 
