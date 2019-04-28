@@ -113,16 +113,35 @@
     flex-wrap: wrap;
   } */
 
-  
+  /* Style of figure and figcaption for width < 1200px 
+   * Caption is justified and under image
+   */
   figure:not([style*='width']):not(.center) {
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: center;
   }
 
   figure:not([style*='width']) > figcaption {
-    margin-left: 0.8em;
-    text-align: left;
-    color: red;
+    text-align: justify;
+    color: green;
+  }
+
+  /* Style of figure and figcaption for width >= 1200px 
+   * Caption is aligned to the left and on the right side of the image
+   */
+  @media only screen and (min-width: 1200px) {
+    figure:not([style*='width']):not(.center) {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+    }
+    
+    figure:not([style*='width']) > figcaption {
+      margin-left: 0.8em;
+      text-align: left;
+      color: red;
+    }
   }
 
   .mr-1 {
