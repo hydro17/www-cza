@@ -6,7 +6,7 @@
     min-width: 300px;
   }
 
-  .hidden {
+  /* .hidden {
     opacity: 0;
   }
 
@@ -22,59 +22,59 @@
     100% {
       opacity: 1
     }
-  }
+  } */
 
-  article {
+  ::ng-deep article {
     margin: 5px;
     padding-bottom: 20px;
     border-bottom: 1px solid #734a00;
     margin-bottom: 20px;
   }
 
-  header {
+  ::ng-deep header {
     padding: 0 2em;
     text-align: center;
     margin-bottom: 1em;
   }
 
-  footer {
+  ::ng-deep footer {
     text-align: right;
     font-weight: bold;
     font-style: italic;
     margin-top: 1em;
   }
 
-  .title {
+  ::ng-deep .title {
     font-size: 1.4em;
     font-weight: bold;
   }
 
-  .author-name {
+  ::ng-deep .author-name {
     font-size: 1.2em;
   }
 
-  .author-position {
+  ::ng-deep .author-position {
     font-size: 0.8em;
     font-style: italic;
   }
 
-  .author-position,
-  .author-name {
+  ::ng-deep .author-position,
+  ::ng-deep .author-name {
     margin: 0.4em 0;
   }
 
-  .body > p {
+  ::ng-deep .body > p {
     text-align: justify;
     margin: 0.4em 0;
   }
 
-  figcaption {
+  ::ng-deep figcaption {
     font-size: 0.8em;
     text-align: right;
     margin-top: 0.5em;
   }
 
-  figure img {
+  ::ng-deep figure img {
     border: 1px solid #734A00;
   }
   
@@ -83,25 +83,25 @@
     max-width: 400px;
   } */
 
-  img {
+  ::ng-deep img {
     width: 100%;
     max-width: 400px;
   }
 
-  .img-big {
+  ::ng-deep .img-big {
     max-width: 500px;
   }
 
   /* Style of figure and figcaption for width < 1200px 
    * Caption is justified and under image
    */
-  figure:not([style*='width']):not(.center) {
+   ::ng-deep figure:not([style*='width']):not(.center) {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  figure:not([style*='width']) > figcaption {
+  ::ng-deep figure:not([style*='width']) > figcaption {
     text-align: justify;
   }
 
@@ -109,30 +109,34 @@
    * Caption is aligned to the left and on the right side of the image
    */
   @media only screen and (min-width: 1200px) {
-    figure:not([style*='width']):not(.center) {
+    ::ng-deep figure:not([style*='width']):not(.center) {
       display: flex;
       flex-direction: row;
       align-items: flex-end;
     }
     
-    figure:not([style*='width']) > figcaption {
+    ::ng-deep figure:not([style*='width']) > figcaption {
       margin-left: 0.8em;
       text-align: left;
     }
   }
 
-  .mr-1 {
+  ::ng-deep .mr-1 {
     margin-right: 0.8em;
   }
 
-  .mb-1 {
+  ::ng-deep .mb-1 {
     margin-bottom: 0.5em;
   }
 
-  .mt-1 {
+  ::ng-deep .mt-1 {
     margin-top: 0.5em;
   }
 
-  .fl {
+  ::ng-deep .fl {
     float: left;
   }
+
+/* ::ng-deep * {
+    color: red;
+  } */

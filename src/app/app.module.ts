@@ -13,6 +13,7 @@ import { LogoComponent } from './components/header/logo/logo.component';
 import { FrameComponent } from './components/frame/frame.component';
 import { SidebarCardComponent } from './components/body/sidebar/sidebar-card/sidebar-card.component';
 import { ContactComponent } from './components/header/contact/contact.component';
+import { NewsComponent } from './components/body/main/content/news/news.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ContactComponent } from './components/header/contact/contact.component'
     LogoComponent,
     FrameComponent,
     SidebarCardComponent,
-    ContactComponent
+    ContactComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,
