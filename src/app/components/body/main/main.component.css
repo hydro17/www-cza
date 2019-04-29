@@ -24,57 +24,57 @@
     }
   } */
 
-  ::ng-deep article {
+  router-outlet + ::ng-deep * article {
     margin: 5px;
     padding-bottom: 20px;
     border-bottom: 1px solid #734a00;
     margin-bottom: 20px;
   }
 
-  ::ng-deep header {
+  router-outlet + ::ng-deep * header {
     padding: 0 2em;
     text-align: center;
     margin-bottom: 1em;
   }
 
-  ::ng-deep footer {
+  router-outlet + ::ng-deep * footer {
     text-align: right;
     font-weight: bold;
     font-style: italic;
     margin-top: 1em;
   }
 
-  ::ng-deep .title {
+  router-outlet + ::ng-deep * .title {
     font-size: 1.4em;
     font-weight: bold;
   }
 
-  ::ng-deep .author-name {
+  router-outlet + ::ng-deep * .author-name {
     font-size: 1.2em;
   }
 
-  ::ng-deep .author-position {
+  router-outlet + ::ng-deep * .author-position {
     font-size: 0.8em;
     font-style: italic;
   }
 
-  ::ng-deep .author-position,
-  ::ng-deep .author-name {
+  router-outlet + ::ng-deep * .author-position,
+  router-outlet + ::ng-deep * .author-name {
     margin: 0.4em 0;
   }
 
-  ::ng-deep .body > p {
+  router-outlet + ::ng-deep * .body p {
     text-align: justify;
     margin: 0.4em 0;
   }
 
-  ::ng-deep figcaption {
+  router-outlet + ::ng-deep * figcaption {
     font-size: 0.8em;
     text-align: right;
     margin-top: 0.5em;
   }
 
-  ::ng-deep figure img {
+  router-outlet + ::ng-deep * figure img {
     border: 1px solid #734A00;
   }
   
@@ -83,25 +83,25 @@
     max-width: 400px;
   } */
 
-  ::ng-deep img {
+  router-outlet + ::ng-deep * img {
     width: 100%;
     max-width: 400px;
   }
 
-  ::ng-deep .img-big {
+  router-outlet + ::ng-deep * .img-big {
     max-width: 500px;
   }
 
   /* Style of figure and figcaption for width < 1200px 
    * Caption is justified and under image
    */
-   ::ng-deep figure:not([style*='width']):not(.center) {
+   router-outlet + ::ng-deep * figure:not([style*='width']):not(.center) {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  ::ng-deep figure:not([style*='width']) > figcaption {
+  router-outlet + ::ng-deep * figure:not([style*='width']) > figcaption {
     text-align: justify;
   }
 
@@ -109,34 +109,30 @@
    * Caption is aligned to the left and on the right side of the image
    */
   @media only screen and (min-width: 1200px) {
-    ::ng-deep figure:not([style*='width']):not(.center) {
+    router-outlet + ::ng-deep * figure:not([style*='width']):not(.center) {
       display: flex;
       flex-direction: row;
       align-items: flex-end;
     }
     
-    ::ng-deep figure:not([style*='width']) > figcaption {
+    router-outlet + ::ng-deep * figure:not([style*='width']) > figcaption {
       margin-left: 0.8em;
       text-align: left;
     }
   }
 
-  ::ng-deep .mr-1 {
+  router-outlet + ::ng-deep * .mr-1 {
     margin-right: 0.8em;
   }
 
-  ::ng-deep .mb-1 {
+  router-outlet + ::ng-deep * .mb-1 {
     margin-bottom: 0.5em;
   }
 
-  ::ng-deep .mt-1 {
+  router-outlet + ::ng-deep * .mt-1 {
     margin-top: 0.5em;
   }
 
-  ::ng-deep .fl {
+  router-outlet + ::ng-deep * .fl {
     float: left;
   }
-
-/* ::ng-deep * {
-    color: red;
-  } */

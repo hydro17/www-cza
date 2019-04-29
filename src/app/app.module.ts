@@ -14,6 +14,7 @@ import { FrameComponent } from './components/frame/frame.component';
 import { SidebarCardComponent } from './components/body/sidebar/sidebar-card/sidebar-card.component';
 import { ContactComponent } from './components/header/contact/contact.component';
 import { NewsComponent } from './components/body/main/content/news/news.component';
+import { InfoAboutCzaComponent } from './components/body/main/content/info-about-cza/info-about-cza.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { NewsComponent } from './components/body/main/content/news/news.componen
     FrameComponent,
     SidebarCardComponent,
     ContactComponent,
-    NewsComponent
+    NewsComponent,
+    InfoAboutCzaComponent
   ],
   imports: [
     BrowserModule,
