@@ -26,9 +26,12 @@
 
   router-outlet + ::ng-deep * article {
     margin: 5px;
+    margin-bottom: 20px;
+  }
+  
+  router-outlet + ::ng-deep * article:not(:last-of-type) {
     padding-bottom: 20px;
     border-bottom: 1px solid #734a00;
-    margin-bottom: 20px;
   }
 
   router-outlet + ::ng-deep * header {
