@@ -40,32 +40,6 @@
     margin-bottom: 1em;
   }
 
-  router-outlet + ::ng-deep * footer {
-    text-align: right;
-    font-weight: bold;
-    font-style: italic;
-    margin-top: 1em;
-  }
-
-  router-outlet + ::ng-deep * .title {
-    font-size: 1.4em;
-    font-weight: bold;
-  }
-
-  router-outlet + ::ng-deep * .author-name {
-    font-size: 1.2em;
-  }
-
-  router-outlet + ::ng-deep * .author-position {
-    font-size: 0.8em;
-    font-style: italic;
-  }
-
-  router-outlet + ::ng-deep * .author-position,
-  router-outlet + ::ng-deep * .author-name {
-    margin: 0.4em 0;
-  }
-
   router-outlet + ::ng-deep * .body p {
     text-align: justify;
     margin: 0.4em 0;
@@ -122,20 +96,4 @@
       margin-left: 0.8em;
       text-align: left;
     }
-  }
-
-  router-outlet + ::ng-deep * .mr-1 {
-    margin-right: 0.8em;
-  }
-
-  router-outlet + ::ng-deep * .mb-1 {
-    margin-bottom: 0.5em;
-  }
-
-  router-outlet + ::ng-deep * .mt-1 {
-    margin-top: 0.5em;
-  }
-
-  router-outlet + ::ng-deep * .fl {
-    float: left;
   }

@@ -11,6 +11,11 @@ body {
   color: #734a00;  
 }
 
+article p, section p {
+  font-size: 0.95em;
+  /* line-height: 1.2em; */
+}
+
 .mock {
   background-color: lightgrey;
   padding: 15px;
@@ -37,4 +42,20 @@ a:hover{
   justify-content: center;
   align-items: center;
   /* flex-wrap: wrap; */
+}
+
+.mr-1 {
+  margin-right: 0.8em;
+}
+
+.mb-1 {
+  margin-bottom: 0.5em;
+}
+
+.mt-1 {
+  margin-top: 0.5em;
+}
+
+.fl {
+  float: left;
 }
