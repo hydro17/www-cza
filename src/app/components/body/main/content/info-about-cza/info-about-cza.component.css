@@ -1,3 +1,7 @@
 .text-center p {
   text-align: center;
 }
+
+p {
+  margin: 0.4em 0;
+}
