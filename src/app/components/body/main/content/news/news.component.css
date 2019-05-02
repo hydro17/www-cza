@@ -1,9 +1,12 @@
-footer {
-  text-align: right;
-  font-weight: bold;
-  font-style: italic;
-  margin-top: 1em;
-} 
+article > p, section > p {
+  text-align: justify;
+  margin: 0.4em 0;
+}
+
+h2 {
+  font-size: 1.4em;
+  margin-bottom: 0.5em;
+}
 
 .author-name {
   font-size: 1.2em;
@@ -19,7 +22,10 @@ footer {
   margin: 0.4em 0;
 }
 
-.title {
-  font-size: 1.4em;
+footer {
+  text-align: right;
   font-weight: bold;
+  font-style: italic;
+  margin-top: 1em;
 }
+ 
