@@ -28,6 +28,8 @@ import { GlowniakComponent } from './components/body/main/content/order/album/gl
 import { JamborComponent } from './components/body/main/content/order/album/jambor/jambor.component';
 import { BookComponent } from './components/body/main/content/order/book/book.component';
 import { MarszallPlynnychComponent } from './components/body/main/content/order/book/marszall-plynnych/marszall-plynnych.component';
+import { MarszallPolstalychComponent } from './components/body/main/content/order/book/marszall-polstalych/marszall-polstalych.component';
+import { MarszallProblemyComponent } from './components/body/main/content/order/book/marszall-problemy/marszall-problemy.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +57,9 @@ import { MarszallPlynnychComponent } from './components/body/main/content/order/
     GlowniakComponent,
     JamborComponent,
     BookComponent,
-    MarszallPlynnychComponent
+    MarszallPlynnychComponent,
+    MarszallPolstalychComponent,
+    MarszallProblemyComponent
   ],
   imports: [
     BrowserModule,
