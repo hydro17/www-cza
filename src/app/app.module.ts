@@ -16,7 +16,11 @@ import { ContactComponent } from './components/header/contact/contact.component'
 import { NewsComponent } from './components/body/main/content/news/news.component';
 import { InfoAboutCzaComponent } from './components/body/main/content/info-about-cza/info-about-cza.component';
 import { TableOfContentsComponent } from './components/body/main/content/table-of-contents/table-of-contents.component';
+// tslint:disable-next-line:max-line-length
 import { ScientificArticlesDigestComponent } from './components/body/main/content/scientific-articles-digest/scientific-articles-digest.component';
+import { OrderComponent } from './components/body/main/content/order/order.component';
+import { AlbumComponent } from './components/body/main/content/order/album/album.component';
+import { HarasimowiczComponent } from './components/body/main/content/order/album/harasimowicz/harasimowicz.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +38,10 @@ import { ScientificArticlesDigestComponent } from './components/body/main/conten
     NewsComponent,
     InfoAboutCzaComponent,
     TableOfContentsComponent,
-    ScientificArticlesDigestComponent
+    ScientificArticlesDigestComponent,
+    OrderComponent,
+    AlbumComponent,
+    HarasimowiczComponent
   ],
   imports: [
     BrowserModule,
