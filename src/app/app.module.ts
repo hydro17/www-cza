@@ -30,6 +30,8 @@ import { BookComponent } from './components/body/main/content/order/book/book.co
 import { MarszallPlynnychComponent } from './components/body/main/content/order/book/marszall-plynnych/marszall-plynnych.component';
 import { MarszallPolstalychComponent } from './components/body/main/content/order/book/marszall-polstalych/marszall-polstalych.component';
 import { MarszallProblemyComponent } from './components/body/main/content/order/book/marszall-problemy/marszall-problemy.component';
+import { SkulskiComponent } from './components/body/main/content/order/book/skulski/skulski.component';
+import { SlownikJakosciZyciaComponent } from './components/body/main/content/order/book/slownik-jakosci-zycia/slownik-jakosci-zycia.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +61,9 @@ import { MarszallProblemyComponent } from './components/body/main/content/order/
     BookComponent,
     MarszallPlynnychComponent,
     MarszallPolstalychComponent,
-    MarszallProblemyComponent
+    MarszallProblemyComponent,
+    SkulskiComponent,
+    SlownikJakosciZyciaComponent
   ],
   imports: [
     BrowserModule,

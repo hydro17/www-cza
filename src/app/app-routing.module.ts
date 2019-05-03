@@ -1,3 +1,6 @@
+// tslint:disable-next-line:max-line-length
+import { SlownikJakosciZyciaComponent } from './components/body/main/content/order/book/slownik-jakosci-zycia/slownik-jakosci-zycia.component';
+import { SkulskiComponent } from './components/body/main/content/order/book/skulski/skulski.component';
 import { MarszallProblemyComponent } from './components/body/main/content/order/book/marszall-problemy/marszall-problemy.component';
 import { MarszallPolstalychComponent } from './components/body/main/content/order/book/marszall-polstalych/marszall-polstalych.component';
 import { MarszallPlynnychComponent } from './components/body/main/content/order/book/marszall-plynnych/marszall-plynnych.component';
@@ -27,9 +30,11 @@ const routes: Routes = [
   { path: 'order-album-kocay', component: KocayComponent },
   { path: 'order-album-glowniak', component: GlowniakComponent },
   { path: 'order-album-jambor', component: JamborComponent },
-  { path: 'order-album-marszall-plynnych', component: MarszallPlynnychComponent },
-  { path: 'order-album-marszall-polstalych', component: MarszallPolstalychComponent },
-  { path: 'order-album-marszall-problemy', component: MarszallProblemyComponent }
+  { path: 'order-book-marszall-plynnych', component: MarszallPlynnychComponent },
+  { path: 'order-book-marszall-polstalych', component: MarszallPolstalychComponent },
+  { path: 'order-book-marszall-problemy', component: MarszallProblemyComponent },
+  { path: 'order-book-skulski', component: SkulskiComponent },
+  { path: 'order-book-slownik-jakosci-zycia', component: SlownikJakosciZyciaComponent }
 ];
 
 @NgModule({
