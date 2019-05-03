@@ -23,6 +23,9 @@ import { AlbumComponent } from './components/body/main/content/order/album/album
 import { HarasimowiczComponent } from './components/body/main/content/order/album/harasimowicz/harasimowicz.component';
 import { SlykComponent } from './components/body/main/content/order/album/slyk/slyk.component';
 import { KossuthComponent } from './components/body/main/content/order/album/kossuth/kossuth.component';
+import { KocayComponent } from './components/body/main/content/order/album/kocay/kocay.component';
+import { GlowniakComponent } from './components/body/main/content/order/album/glowniak/glowniak.component';
+import { JamborComponent } from './components/body/main/content/order/album/jambor/jambor.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +48,10 @@ import { KossuthComponent } from './components/body/main/content/order/album/kos
     AlbumComponent,
     HarasimowiczComponent,
     SlykComponent,
-    KossuthComponent
+    KossuthComponent,
+    KocayComponent,
+    GlowniakComponent,
+    JamborComponent
   ],
   imports: [
     BrowserModule,

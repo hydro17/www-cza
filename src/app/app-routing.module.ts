@@ -1,3 +1,6 @@
+import { JamborComponent } from './components/body/main/content/order/album/jambor/jambor.component';
+import { GlowniakComponent } from './components/body/main/content/order/album/glowniak/glowniak.component';
+import { KocayComponent } from './components/body/main/content/order/album/kocay/kocay.component';
 import { KossuthComponent } from './components/body/main/content/order/album/kossuth/kossuth.component';
 import { SlykComponent } from './components/body/main/content/order/album/slyk/slyk.component';
 // tslint:disable-next-line:max-line-length
@@ -18,7 +21,10 @@ const routes: Routes = [
   { path: 'scientific-articles-digest', component: ScientificArticlesDigestComponent },
   { path: 'order-album-harasimowicz', component: HarasimowiczComponent },
   { path: 'order-album-slyk', component: SlykComponent },
-  { path: 'order-album-kossuth', component: KossuthComponent }
+  { path: 'order-album-kossuth', component: KossuthComponent },
+  { path: 'order-album-kocay', component: KocayComponent },
+  { path: 'order-album-glowniak', component: GlowniakComponent },
+  { path: 'order-album-jambor', component: JamborComponent }
 ];
 
 @NgModule({
