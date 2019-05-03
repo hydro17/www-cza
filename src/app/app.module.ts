@@ -22,6 +22,7 @@ import { OrderComponent } from './components/body/main/content/order/order.compo
 import { AlbumComponent } from './components/body/main/content/order/album/album.component';
 import { HarasimowiczComponent } from './components/body/main/content/order/album/harasimowicz/harasimowicz.component';
 import { SlykComponent } from './components/body/main/content/order/album/slyk/slyk.component';
+import { KossuthComponent } from './components/body/main/content/order/album/kossuth/kossuth.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { SlykComponent } from './components/body/main/content/order/album/slyk/s
     OrderComponent,
     AlbumComponent,
     HarasimowiczComponent,
-    SlykComponent
+    SlykComponent,
+    KossuthComponent
   ],
   imports: [
     BrowserModule,
