@@ -21,6 +21,7 @@ import { ScientificArticlesDigestComponent } from './components/body/main/conten
 import { OrderComponent } from './components/body/main/content/order/order.component';
 import { AlbumComponent } from './components/body/main/content/order/album/album.component';
 import { HarasimowiczComponent } from './components/body/main/content/order/album/harasimowicz/harasimowicz.component';
+import { SlykComponent } from './components/body/main/content/order/album/slyk/slyk.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { HarasimowiczComponent } from './components/body/main/content/order/albu
     ScientificArticlesDigestComponent,
     OrderComponent,
     AlbumComponent,
-    HarasimowiczComponent
+    HarasimowiczComponent,
+    SlykComponent
   ],
   imports: [
     BrowserModule,

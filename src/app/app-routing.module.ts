@@ -1,3 +1,4 @@
+import { SlykComponent } from './components/body/main/content/order/album/slyk/slyk.component';
 // tslint:disable-next-line:max-line-length
 import { HarasimowiczComponent } from './components/body/main/content/order/album/harasimowicz/harasimowicz.component';
 // tslint:disable-next-line:max-line-length
@@ -14,7 +15,8 @@ const routes: Routes = [
   { path: 'info-about-cza', component: InfoAboutCzaComponent },
   { path: 'table-of-contents', component: TableOfContentsComponent },
   { path: 'scientific-articles-digest', component: ScientificArticlesDigestComponent },
-  { path: 'order-album-harasimowicz', component: HarasimowiczComponent }
+  { path: 'order-album-harasimowicz', component: HarasimowiczComponent },
+  { path: 'order-album-slyk', component: SlykComponent }
 ];
 
 @NgModule({
