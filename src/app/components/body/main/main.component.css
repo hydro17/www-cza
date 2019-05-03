@@ -24,12 +24,14 @@
     }
   } */
 
-  router-outlet + ::ng-deep * article {
+  router-outlet + ::ng-deep * article,
+  router-outlet + ::ng-deep * section {
     margin: 5px;
     margin-bottom: 20px;
   }
   
-  router-outlet + ::ng-deep * article:not(:last-of-type) {
+  router-outlet + ::ng-deep * article:not(:last-child),
+  router-outlet + ::ng-deep * section:not(:last-child) {
     padding-bottom: 20px;
     border-bottom: 1px solid #734a00;
   }
@@ -38,37 +40,6 @@
     padding: 0 2em;
     text-align: center;
     margin-bottom: 1em;
-  }
-
-  router-outlet + ::ng-deep * footer {
-    text-align: right;
-    font-weight: bold;
-    font-style: italic;
-    margin-top: 1em;
-  }
-
-  router-outlet + ::ng-deep * .title {
-    font-size: 1.4em;
-    font-weight: bold;
-  }
-
-  router-outlet + ::ng-deep * .author-name {
-    font-size: 1.2em;
-  }
-
-  router-outlet + ::ng-deep * .author-position {
-    font-size: 0.8em;
-    font-style: italic;
-  }
-
-  router-outlet + ::ng-deep * .author-position,
-  router-outlet + ::ng-deep * .author-name {
-    margin: 0.4em 0;
-  }
-
-  router-outlet + ::ng-deep * .body p {
-    text-align: justify;
-    margin: 0.4em 0;
   }
 
   router-outlet + ::ng-deep * figcaption {
@@ -80,11 +51,6 @@
   router-outlet + ::ng-deep * figure img {
     border: 1px solid #734A00;
   }
-  
-  /* img:not([style*='width']) {
-    width: 100%;
-    max-width: 400px;
-  } */
 
   router-outlet + ::ng-deep * img {
     width: 100%;
@@ -122,20 +88,4 @@
       margin-left: 0.8em;
       text-align: left;
     }
-  }
-
-  router-outlet + ::ng-deep * .mr-1 {
-    margin-right: 0.8em;
-  }
-
-  router-outlet + ::ng-deep * .mb-1 {
-    margin-bottom: 0.5em;
-  }
-
-  router-outlet + ::ng-deep * .mt-1 {
-    margin-top: 0.5em;
-  }
-
-  router-outlet + ::ng-deep * .fl {
-    float: left;
   }

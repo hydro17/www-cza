@@ -1,3 +1,13 @@
 .text-center p {
   text-align: center;
 }
+
+p {
+  margin: 0.8em 0;
+}
+
+@media only screen and (min-width: 1200px) {
+  section {
+    padding: 0 2em;
+  }
+}

@@ -1,0 +1,20 @@
+h3 {
+  text-align: center;
+}
+
+h4 {
+  margin: 1em 0 0.5em 0;
+  padding-bottom: 0.4em;
+  border-bottom: 1px solid #734a00;
+  text-transform: uppercase;
+}
+
+p.toc-author {
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+p:not(.toc-author) {
+  font-weight: bold;
+  margin-bottom: 0.7em;
+}

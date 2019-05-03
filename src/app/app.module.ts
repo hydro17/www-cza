@@ -15,6 +15,8 @@ import { SidebarCardComponent } from './components/body/sidebar/sidebar-card/sid
 import { ContactComponent } from './components/header/contact/contact.component';
 import { NewsComponent } from './components/body/main/content/news/news.component';
 import { InfoAboutCzaComponent } from './components/body/main/content/info-about-cza/info-about-cza.component';
+import { TableOfContentsComponent } from './components/body/main/content/table-of-contents/table-of-contents.component';
+import { ScientificArticlesDigestComponent } from './components/body/main/content/scientific-articles-digest/scientific-articles-digest.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { InfoAboutCzaComponent } from './components/body/main/content/info-about
     SidebarCardComponent,
     ContactComponent,
     NewsComponent,
-    InfoAboutCzaComponent
+    InfoAboutCzaComponent,
+    TableOfContentsComponent,
+    ScientificArticlesDigestComponent
   ],
   imports: [
     BrowserModule,
