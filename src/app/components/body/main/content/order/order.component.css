@@ -30,3 +30,7 @@ footer > p {
   text-align: right;
   padding-right: 3em;
 }
+
+a {
+  text-decoration: underline;
+}
