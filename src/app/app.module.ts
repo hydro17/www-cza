@@ -26,6 +26,8 @@ import { KossuthComponent } from './components/body/main/content/order/album/kos
 import { KocayComponent } from './components/body/main/content/order/album/kocay/kocay.component';
 import { GlowniakComponent } from './components/body/main/content/order/album/glowniak/glowniak.component';
 import { JamborComponent } from './components/body/main/content/order/album/jambor/jambor.component';
+import { BookComponent } from './components/body/main/content/order/book/book.component';
+import { MarszallPlynnychComponent } from './components/body/main/content/order/book/marszall-plynnych/marszall-plynnych.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +53,9 @@ import { JamborComponent } from './components/body/main/content/order/album/jamb
     KossuthComponent,
     KocayComponent,
     GlowniakComponent,
-    JamborComponent
+    JamborComponent,
+    BookComponent,
+    MarszallPlynnychComponent
   ],
   imports: [
     BrowserModule,

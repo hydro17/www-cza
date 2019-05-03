@@ -1,0 +1,11 @@
+@import "../order.component.css";
+
+h2 {
+  font-size: 1.4em;
+  margin-bottom: 0.8em;
+  text-align: center;
+}
+
+.author {
+  font-size: 1.1em;
+}
