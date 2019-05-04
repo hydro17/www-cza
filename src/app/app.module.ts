@@ -34,6 +34,7 @@ import { SkulskiComponent } from './components/body/main/content/order/book/skul
 import { SlownikJakosciZyciaComponent } from './components/body/main/content/order/book/slownik-jakosci-zycia/slownik-jakosci-zycia.component';
 import { SubscriptionComponent } from './components/body/main/content/subscription/subscription.component';
 import { AnnualTablesOfContentsComponent } from './components/body/main/content/annual-tables-of-contents/annual-tables-of-contents.component';
+import { RulesForAuthorsComponent } from './components/body/main/content/rules-for-authors/rules-for-authors.component';
 
 @NgModule({
   declarations: [
@@ -67,7 +68,8 @@ import { AnnualTablesOfContentsComponent } from './components/body/main/content/
     SkulskiComponent,
     SlownikJakosciZyciaComponent,
     SubscriptionComponent,
-    AnnualTablesOfContentsComponent
+    AnnualTablesOfContentsComponent,
+    RulesForAuthorsComponent
   ],
   imports: [
     BrowserModule,

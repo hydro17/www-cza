@@ -1,3 +1,4 @@
+import { RulesForAuthorsComponent } from './components/body/main/content/rules-for-authors/rules-for-authors.component';
 // tslint:disable-next-line:max-line-length
 import { AnnualTablesOfContentsComponent } from './components/body/main/content/annual-tables-of-contents/annual-tables-of-contents.component';
 import { SubscriptionComponent } from './components/body/main/content/subscription/subscription.component';
@@ -39,7 +40,8 @@ const routes: Routes = [
   { path: 'order-book-skulski', component: SkulskiComponent },
   { path: 'order-book-slownik-jakosci-zycia', component: SlownikJakosciZyciaComponent },
   { path: 'subscription', component: SubscriptionComponent },
-  { path: 'annual-tables-of-contents', component: AnnualTablesOfContentsComponent }
+  { path: 'annual-tables-of-contents', component: AnnualTablesOfContentsComponent },
+  { path: 'rules-for-authors', component: RulesForAuthorsComponent }
 ];
 
 @NgModule({
