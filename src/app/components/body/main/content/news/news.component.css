@@ -3,11 +3,6 @@ article > p {
   margin: 0.4em 0;
 }
 
-/* p {
-  text-align: justify;
-  margin: 0.4em 0;
-} */
-
 header > h2 {
   font-size: 1.4em;
   margin-bottom: 0.5em;
@@ -61,4 +56,9 @@ article > .footnotes::before {
   content: "--------------------";
   display: block;
   margin-top: 0.8em;
+}
+
+section:first-child a {
+  display: block;
+  margin-top: 0.3em;
 }
