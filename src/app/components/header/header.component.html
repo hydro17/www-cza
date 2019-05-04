@@ -1,41 +1,3 @@
-<style>
-  :host>* {
-    display: flex;
-    justify-content: center;
-  }
-
-  :host>*>* {
-    border: 2px dotted green;
-  }
-
-  cza-contact {
-    /* flex-basis: 180px; */
-    /* flex: 0 0 180px; */
-    width: 180px;
-    min-width: 145px;
-  }
-
-  cza-logo {
-    /* flex-basis: 400px; */
-  }
-
-  p {
-    text-align: center;
-    font-size: 0.8em;
-  }
-
-  p:not(:last-of-type) {
-    margin-bottom: 0.5em;
-  }
-
-  .contact-container {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-</style>
-
 <div>
   <cza-contact>
     <div class="contact-container">
@@ -49,7 +11,7 @@
         22 879-92-32
       </p>
 
-      <p>e-mail: cza@cza.pl</p>
+      <p>e-mail: <a href="mailto:cza@cza.pl">cza@cza.pl</a></p>
     </div>
   </cza-contact>
 

@@ -1,27 +1,35 @@
-/* cza-contact-left > cza-frame > p, cza-contact-right > cza-frame > p {
-  text-align: center;
+:host>* {
+  display: flex;
+  justify-content: center;
 }
 
-cza-contact-left > p:not(:last-of-type), 
-cza-contact-right > p:not(:last-of-type) {
-  margin-bottom: 0.5em;
+/* :host>*>* {
+  border: 2px dotted green;
 } */
 
-/* .contact {
-  text-align: center;
-  color: green;
+cza-contact {
+  /* flex-basis: 180px; */
+  /* flex: 0 0 180px; */
+  width: 180px;
+  min-width: 145px;
 }
 
-.contact:not(:last-of-type) {
-  margin-bottom: 0.5em;
-} */
+cza-logo {
+  /* flex-basis: 400px; */
+}
 
- /* p {
+p {
   text-align: center;
   font-size: 0.8em;
-  color: red;
-} */
+}
 
-/* p:not(:last-of-type) {
+p:not(:last-of-type) {
   margin-bottom: 0.5em;
-}  */
+}
+
+.contact-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
