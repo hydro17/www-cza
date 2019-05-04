@@ -11,7 +11,7 @@ body {
   color: #734a00;  
 }
 
-article p, section p, article li, section li {
+main p, main li {
   font-size: 0.95em;
   /* line-height: 1.2em; */
 }
