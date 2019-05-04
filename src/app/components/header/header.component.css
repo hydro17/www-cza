@@ -1,7 +1,33 @@
-:host>* {
-  display: flex;
+:host > div {
+  display: grid;
+  grid-template-columns: 180px 408px 180px; 
+  grid-template-rows: auto auto; 
+  grid-template-areas: 
+    'contact-left logo contact-right'
+    'ad ad ad';
   justify-content: center;
 }
+
+cza-contact:first-child {
+  grid-area: contact-left;
+}
+
+cza-logo {
+  grid-area: logo;
+}
+
+cza-contact:last-child {
+  grid-area: contact-right;
+}
+
+cza-upper-advertisement {
+  grid-area: ad;
+}
+
+/* :host>* {
+  display: flex;
+  justify-content: center;
+} */
 
 /* :host>*>* {
   border: 2px dotted green;
@@ -10,12 +36,8 @@
 cza-contact {
   /* flex-basis: 180px; */
   /* flex: 0 0 180px; */
-  width: 180px;
-  min-width: 145px;
-}
-
-cza-logo {
-  /* flex-basis: 400px; */
+  /* width: 180px;
+  min-width: 145px; */
 }
 
 p {

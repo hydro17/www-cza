@@ -35,6 +35,7 @@ import { SlownikJakosciZyciaComponent } from './components/body/main/content/ord
 import { SubscriptionComponent } from './components/body/main/content/subscription/subscription.component';
 import { AnnualTablesOfContentsComponent } from './components/body/main/content/annual-tables-of-contents/annual-tables-of-contents.component';
 import { RulesForAuthorsComponent } from './components/body/main/content/rules-for-authors/rules-for-authors.component';
+import { UpperAdvertisementComponent } from './components/header/upper-advertisement/upper-advertisement.component';
 
 @NgModule({
   declarations: [
@@ -69,7 +70,8 @@ import { RulesForAuthorsComponent } from './components/body/main/content/rules-f
     SlownikJakosciZyciaComponent,
     SubscriptionComponent,
     AnnualTablesOfContentsComponent,
-    RulesForAuthorsComponent
+    RulesForAuthorsComponent,
+    UpperAdvertisementComponent
   ],
   imports: [
     BrowserModule,
