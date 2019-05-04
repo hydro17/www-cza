@@ -1,3 +1,4 @@
+import { SubscriptionComponent } from './components/body/main/content/subscription/subscription.component';
 // tslint:disable-next-line:max-line-length
 import { SlownikJakosciZyciaComponent } from './components/body/main/content/order/book/slownik-jakosci-zycia/slownik-jakosci-zycia.component';
 import { SkulskiComponent } from './components/body/main/content/order/book/skulski/skulski.component';
@@ -34,7 +35,8 @@ const routes: Routes = [
   { path: 'order-book-marszall-polstalych', component: MarszallPolstalychComponent },
   { path: 'order-book-marszall-problemy', component: MarszallProblemyComponent },
   { path: 'order-book-skulski', component: SkulskiComponent },
-  { path: 'order-book-slownik-jakosci-zycia', component: SlownikJakosciZyciaComponent }
+  { path: 'order-book-slownik-jakosci-zycia', component: SlownikJakosciZyciaComponent },
+  { path: 'subscription', component: SubscriptionComponent }
 ];
 
 @NgModule({

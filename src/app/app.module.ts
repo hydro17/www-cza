@@ -32,6 +32,7 @@ import { MarszallPolstalychComponent } from './components/body/main/content/orde
 import { MarszallProblemyComponent } from './components/body/main/content/order/book/marszall-problemy/marszall-problemy.component';
 import { SkulskiComponent } from './components/body/main/content/order/book/skulski/skulski.component';
 import { SlownikJakosciZyciaComponent } from './components/body/main/content/order/book/slownik-jakosci-zycia/slownik-jakosci-zycia.component';
+import { SubscriptionComponent } from './components/body/main/content/subscription/subscription.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +64,8 @@ import { SlownikJakosciZyciaComponent } from './components/body/main/content/ord
     MarszallPolstalychComponent,
     MarszallProblemyComponent,
     SkulskiComponent,
-    SlownikJakosciZyciaComponent
+    SlownikJakosciZyciaComponent,
+    SubscriptionComponent
   ],
   imports: [
     BrowserModule,

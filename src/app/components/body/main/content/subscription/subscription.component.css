@@ -1,0 +1,25 @@
+@media only screen and (min-width: 1200px) {
+  div {
+    padding: 0 2em;
+  }
+}
+
+p {
+  font-size: 1em;
+  text-align: center;
+  margin: 0.8em 0;
+}
+
+.important {
+  color: red;
+  font-size: larger;
+}
+
+div {
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #734a00;
+}
+
+a {
+  text-decoration: underline;
+}
