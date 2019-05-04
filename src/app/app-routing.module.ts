@@ -1,3 +1,5 @@
+// tslint:disable-next-line:max-line-length
+import { AnnualTablesOfContentsComponent } from './components/body/main/content/annual-tables-of-contents/annual-tables-of-contents.component';
 import { SubscriptionComponent } from './components/body/main/content/subscription/subscription.component';
 // tslint:disable-next-line:max-line-length
 import { SlownikJakosciZyciaComponent } from './components/body/main/content/order/book/slownik-jakosci-zycia/slownik-jakosci-zycia.component';
@@ -36,7 +38,8 @@ const routes: Routes = [
   { path: 'order-book-marszall-problemy', component: MarszallProblemyComponent },
   { path: 'order-book-skulski', component: SkulskiComponent },
   { path: 'order-book-slownik-jakosci-zycia', component: SlownikJakosciZyciaComponent },
-  { path: 'subscription', component: SubscriptionComponent }
+  { path: 'subscription', component: SubscriptionComponent },
+  { path: 'annual-tables-of-contents', component: AnnualTablesOfContentsComponent }
 ];
 
 @NgModule({

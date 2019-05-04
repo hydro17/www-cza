@@ -1,0 +1,36 @@
+div {
+  text-align: center;
+}
+
+h2 {
+  font-weight: normal;
+  margin: 0.8em 0;
+}
+
+h3 {
+  margin-bottom: 0.3em;
+}
+
+div > section {
+  padding: 0;
+  margin: 0 0 0.3em 0;
+  border-bottom: none;
+}
+
+div > img {
+  display: inline-block;
+  width: initial;
+  transform: scaleX(2.7);
+  margin-bottom: 0.3em;
+}
+
+section::after {
+  content: url(/assets/images/line-with-shadow.gif);
+  display: block;
+  transform: scaleX(2.7);
+  margin-top: 0.8em;
+}
+
+a {
+  display: block;
+}
