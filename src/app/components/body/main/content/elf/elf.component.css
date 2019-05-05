@@ -1,0 +1,31 @@
+:host > div {
+  padding: 0 0.5em;
+}
+
+header {
+  margin: 0.5em 0 1em 0;
+}
+
+header, h4 {
+  text-align: center;
+}
+
+h3 {
+  margin: 0.8em 0;
+}
+
+section > p {
+  text-align: justify;
+  margin: 0.4em 0;
+}
+
+div > section {
+  margin-bottom: 1em;
+}
+
+footer {
+  font-weight: bold;
+  font-style: italic;
+  text-align: right;
+  padding-right: 3em;
+}

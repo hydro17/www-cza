@@ -40,6 +40,7 @@ import { RulesForAuthorsComponent } from './components/body/main/content/rules-f
 import { UpperAdvertisementComponent } from './components/header/upper-advertisement/upper-advertisement.component';
 import { ArchivalMagazinesComponent } from './components/body/main/content/archival-magazines/archival-magazines.component';
 import { ContactInfoComponent } from './components/body/main/content/contact-info/contact-info.component';
+import { ElfComponent } from './components/body/main/content/elf/elf.component';
 
 @NgModule({
   declarations: [
@@ -77,7 +78,8 @@ import { ContactInfoComponent } from './components/body/main/content/contact-inf
     RulesForAuthorsComponent,
     UpperAdvertisementComponent,
     ArchivalMagazinesComponent,
-    ContactInfoComponent
+    ContactInfoComponent,
+    ElfComponent
   ],
   imports: [
     BrowserModule,

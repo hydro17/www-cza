@@ -1,3 +1,4 @@
+import { ElfComponent } from './components/body/main/content/elf/elf.component';
 import { ContactInfoComponent } from './components/body/main/content/contact-info/contact-info.component';
 import { ArchivalMagazinesComponent } from './components/body/main/content/archival-magazines/archival-magazines.component';
 import { RulesForAuthorsComponent } from './components/body/main/content/rules-for-authors/rules-for-authors.component';
@@ -46,6 +47,7 @@ const routes: Routes = [
   { path: 'rules-for-authors', component: RulesForAuthorsComponent },
   { path: 'archival-magazines', component: ArchivalMagazinesComponent },
   { path: 'contact-info', component: ContactInfoComponent },
+  { path: 'elf', component: ElfComponent },
   { path: '**', component: NewsComponent }
 ];
 
