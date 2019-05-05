@@ -41,7 +41,8 @@ const routes: Routes = [
   { path: 'order-book-slownik-jakosci-zycia', component: SlownikJakosciZyciaComponent },
   { path: 'subscription', component: SubscriptionComponent },
   { path: 'annual-tables-of-contents', component: AnnualTablesOfContentsComponent },
-  { path: 'rules-for-authors', component: RulesForAuthorsComponent }
+  { path: 'rules-for-authors', component: RulesForAuthorsComponent },
+  { path: '**', component: NewsComponent }
 ];
 
 @NgModule({
