@@ -31,12 +31,15 @@ import { MarszallPlynnychComponent } from './components/body/main/content/order/
 import { MarszallPolstalychComponent } from './components/body/main/content/order/book/marszall-polstalych/marszall-polstalych.component';
 import { MarszallProblemyComponent } from './components/body/main/content/order/book/marszall-problemy/marszall-problemy.component';
 import { SkulskiComponent } from './components/body/main/content/order/book/skulski/skulski.component';
+// tslint:disable-next-line:max-line-length
 import { SlownikJakosciZyciaComponent } from './components/body/main/content/order/book/slownik-jakosci-zycia/slownik-jakosci-zycia.component';
 import { SubscriptionComponent } from './components/body/main/content/subscription/subscription.component';
+// tslint:disable-next-line:max-line-length
 import { AnnualTablesOfContentsComponent } from './components/body/main/content/annual-tables-of-contents/annual-tables-of-contents.component';
 import { RulesForAuthorsComponent } from './components/body/main/content/rules-for-authors/rules-for-authors.component';
 import { UpperAdvertisementComponent } from './components/header/upper-advertisement/upper-advertisement.component';
 import { ArchivalMagazinesComponent } from './components/body/main/content/archival-magazines/archival-magazines.component';
+import { ContactInfoComponent } from './components/body/main/content/contact-info/contact-info.component';
 
 @NgModule({
   declarations: [
@@ -73,7 +76,8 @@ import { ArchivalMagazinesComponent } from './components/body/main/content/archi
     AnnualTablesOfContentsComponent,
     RulesForAuthorsComponent,
     UpperAdvertisementComponent,
-    ArchivalMagazinesComponent
+    ArchivalMagazinesComponent,
+    ContactInfoComponent
   ],
   imports: [
     BrowserModule,

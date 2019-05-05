@@ -1,0 +1,19 @@
+:host > div {
+  text-align: center;
+}
+
+p {
+  margin: 0.8em 0;
+}
+
+section {
+  margin-bottom: 1.5em;
+}
+
+section:first-child {
+  margin-top: 1em;
+}
+
+h3 {
+  font-size: 1.08em;
+}
