@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'cza-glowniak',
   templateUrl: './glowniak.component.html',
-  styleUrls: ['./glowniak.component.css', '../../order.component.css']
+  styleUrls: ['./glowniak.component.css']
 })
 export class GlowniakComponent implements OnInit {
 

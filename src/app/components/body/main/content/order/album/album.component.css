@@ -1,0 +1,17 @@
+@import "../order.component.css";
+
+[class^="quote"] {
+  text-align: right;
+}
+
+.quote, .quote-author-name {
+  font-style: italic;
+}
+
+.quote-author-info, .quote-source {
+  font-size: 0.8em;
+}
+
+.quote-source {
+  margin-bottom: 2em;
+}
