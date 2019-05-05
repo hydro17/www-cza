@@ -1,5 +1,16 @@
+:host > div {
+  padding: 0 0.5em;
+}
+
+@media only screen and (min-width: 1200px) {
+  :host > div {
+    padding: 0 1em;
+  }
+} 
+
 h3 {
   text-align: center;
+  margin: 0.7em 0 1em 0;
 }
 
 h4 {
