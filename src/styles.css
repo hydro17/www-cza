@@ -4,11 +4,16 @@
   margin: 0;
 }
 
+:root {
+  --main-color: #734a00;
+  --main-color-lighter: #b97a00;
+}
+
 body {
   margin: 8px;
   background-color: #fff9c6;
   font-family: Arial, Helvetica, sans-serif;
-  color: #734a00;  
+  color: var(--main-color);  
 }
 
 main p, main li {
@@ -28,12 +33,12 @@ main p, main li {
 }
 
 a {
-  color: #734a00;  
+  color: var(--main-color);  
   text-decoration: none;
 }
 
 a:hover{
-  color: #b97a00;
+  color: var(--main-color-lighter);
 }
 
 .center {
