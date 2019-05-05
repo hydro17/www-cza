@@ -1,3 +1,4 @@
+import { DistinctionsComponent } from './components/body/main/content/distinctions/distinctions.component';
 import { ElfComponent } from './components/body/main/content/elf/elf.component';
 import { ContactInfoComponent } from './components/body/main/content/contact-info/contact-info.component';
 import { ArchivalMagazinesComponent } from './components/body/main/content/archival-magazines/archival-magazines.component';
@@ -48,6 +49,7 @@ const routes: Routes = [
   { path: 'archival-magazines', component: ArchivalMagazinesComponent },
   { path: 'contact-info', component: ContactInfoComponent },
   { path: 'elf', component: ElfComponent },
+  { path: 'distinctions', component: DistinctionsComponent },
   { path: '**', component: NewsComponent }
 ];
 

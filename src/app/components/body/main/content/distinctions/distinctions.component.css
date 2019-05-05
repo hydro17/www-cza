@@ -1,0 +1,30 @@
+:host > div {
+  padding: 0 0.5em;
+}
+
+header, footer {
+  text-align: center;
+}
+
+header {
+  margin: 0.5em 0 0.5em 0;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+figure {
+  margin: 0 auto 1.8em auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+figure:not(:first-of-type) > figcaption {
+  text-align: justify;
+  margin-top: 0.2em;
+}
+
+footer {
+  font-size: smaller;
+  max-width: 600px;
+  margin: 0 auto;
+}

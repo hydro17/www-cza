@@ -41,6 +41,7 @@ import { UpperAdvertisementComponent } from './components/header/upper-advertise
 import { ArchivalMagazinesComponent } from './components/body/main/content/archival-magazines/archival-magazines.component';
 import { ContactInfoComponent } from './components/body/main/content/contact-info/contact-info.component';
 import { ElfComponent } from './components/body/main/content/elf/elf.component';
+import { DistinctionsComponent } from './components/body/main/content/distinctions/distinctions.component';
 
 @NgModule({
   declarations: [
@@ -79,7 +80,8 @@ import { ElfComponent } from './components/body/main/content/elf/elf.component';
     UpperAdvertisementComponent,
     ArchivalMagazinesComponent,
     ContactInfoComponent,
-    ElfComponent
+    ElfComponent,
+    DistinctionsComponent
   ],
   imports: [
     BrowserModule,
