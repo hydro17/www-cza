@@ -1,3 +1,5 @@
+@import "../../main.component.css";
+
 article > p {
   text-align: justify;
   margin: 0.4em 0;
@@ -43,6 +45,17 @@ footer {
   margin-top: 1em;
 }
 
+article, section {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+article:not(:last-child),
+section:not(:last-child) {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #734a00;
+}
+
 article > .footnotes {
   font-size: 0.8em;
 }
@@ -51,14 +64,8 @@ article > .footnotes > ol {
   padding-left: 2em;
 }
 
-
 article > .footnotes::before {
   content: "--------------------";
   display: block;
   margin-top: 0.8em;
-}
-
-section:first-child a {
-  display: block;
-  margin-top: 0.3em;
 }

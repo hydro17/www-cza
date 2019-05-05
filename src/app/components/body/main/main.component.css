@@ -24,67 +24,64 @@
     }
   } */
 
-  router-outlet + ::ng-deep * article,
-  router-outlet + ::ng-deep * section {
+  article, section {
     margin: 5px;
     margin-bottom: 20px;
-  }
-  
-  router-outlet + ::ng-deep * article:not(:last-child),
-  router-outlet + ::ng-deep * section:not(:last-child) {
     padding-bottom: 20px;
     border-bottom: 1px solid #734a00;
   }
-
-  router-outlet + ::ng-deep * header {
+  
+  header {
     padding: 0 2em;
     text-align: center;
     margin-bottom: 1em;
   }
 
-  router-outlet + ::ng-deep * figcaption {
+  figcaption {
     font-size: 0.8em;
     text-align: right;
     margin-top: 0.5em;
   }
 
-  router-outlet + ::ng-deep * figure img {
+  figure img {
     border: 1px solid #734A00;
   }
 
-  router-outlet + ::ng-deep * img {
+  img {
     width: 100%;
     max-width: 400px;
   }
 
-  router-outlet + ::ng-deep * .img-big {
+  .img-big {
     max-width: 500px;
   }
 
-  /* Style of figure and figcaption for width < 1200px 
-   * Caption is justified and under image
-   */
-   router-outlet + ::ng-deep * figure:not([style*='width']):not(.center) {
+  /************************************************** 
+  * Style of figure and figcaption for width < 1200px 
+  * Caption is justified and under image
+  **************************************************/
+  figure:not([style*='width']):not(.center) {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  router-outlet + ::ng-deep * figure:not([style*='width']) > figcaption {
+  figure:not([style*='width']) > figcaption {
     text-align: justify;
   }
 
-  /* Style of figure and figcaption for width >= 1200px 
-   * Caption is aligned to the left and on the right side of the image
-   */
+  /*************************************************** 
+  * Style of figure and figcaption for width >= 1200px 
+  * Caption is aligned to the left and on the right side of the image
+  ****************************************************/
   @media only screen and (min-width: 1200px) {
-    router-outlet + ::ng-deep * figure:not([style*='width']):not(.center) {
+    figure:not([style*='width']):not(.center) {
       display: flex;
       flex-direction: row;
       align-items: flex-end;
     }
     
-    router-outlet + ::ng-deep * figure:not([style*='width']) > figcaption {
+    figure:not([style*='width']) > figcaption {
       margin-left: 0.8em;
       text-align: left;
     }
