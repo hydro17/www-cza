@@ -1,3 +1,4 @@
+import { ArchivalMagazinesComponent } from './components/body/main/content/archival-magazines/archival-magazines.component';
 import { RulesForAuthorsComponent } from './components/body/main/content/rules-for-authors/rules-for-authors.component';
 // tslint:disable-next-line:max-line-length
 import { AnnualTablesOfContentsComponent } from './components/body/main/content/annual-tables-of-contents/annual-tables-of-contents.component';
@@ -42,6 +43,7 @@ const routes: Routes = [
   { path: 'subscription', component: SubscriptionComponent },
   { path: 'annual-tables-of-contents', component: AnnualTablesOfContentsComponent },
   { path: 'rules-for-authors', component: RulesForAuthorsComponent },
+  { path: 'archival-magazines', component: ArchivalMagazinesComponent },
   { path: '**', component: NewsComponent }
 ];
 

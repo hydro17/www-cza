@@ -36,6 +36,7 @@ import { SubscriptionComponent } from './components/body/main/content/subscripti
 import { AnnualTablesOfContentsComponent } from './components/body/main/content/annual-tables-of-contents/annual-tables-of-contents.component';
 import { RulesForAuthorsComponent } from './components/body/main/content/rules-for-authors/rules-for-authors.component';
 import { UpperAdvertisementComponent } from './components/header/upper-advertisement/upper-advertisement.component';
+import { ArchivalMagazinesComponent } from './components/body/main/content/archival-magazines/archival-magazines.component';
 
 @NgModule({
   declarations: [
@@ -71,7 +72,8 @@ import { UpperAdvertisementComponent } from './components/header/upper-advertise
     SubscriptionComponent,
     AnnualTablesOfContentsComponent,
     RulesForAuthorsComponent,
-    UpperAdvertisementComponent
+    UpperAdvertisementComponent,
+    ArchivalMagazinesComponent
   ],
   imports: [
     BrowserModule,
