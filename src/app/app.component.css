@@ -1,0 +1,38 @@
+.container {
+  width: 97%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: 
+    "header header header" 
+    "body body body"
+    "footer footer footer";
+  }
+  
+  cza-header {
+    grid-area: header;
+  }
+  
+  cza-body {
+    grid-area: body;
+  }
+  
+  cza-footer {
+    grid-area: footer;
+  }
+  
+  @media only screen and (min-width: 720px) {
+    .container {
+      grid-template-areas: 
+        "header header header" 
+        "body body body"
+        "footer footer footer";
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .container {
+    width: 80%;
+  }
+}

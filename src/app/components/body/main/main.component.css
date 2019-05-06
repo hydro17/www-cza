@@ -3,7 +3,7 @@
   } */
 
   main {
-    min-width: 300px;
+    min-width: var(--main-content-min-width);
   }
 
   /* .hidden {
