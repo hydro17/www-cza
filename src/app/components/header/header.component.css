@@ -20,7 +20,7 @@ cza-contact:last-of-type {
   grid-area: contact-right;
 }
 
-div.ad-wrapper {
+div.wrapper {
   grid-area: ad;
   padding-left: 5px;
   padding-right: 8px;
@@ -74,7 +74,7 @@ p:not(:last-of-type) {
     display: block;
   }
 
-  div.ad-wrapper {
+  div.wrapper {
     padding-left: 0;
   }
 }
@@ -91,7 +91,7 @@ p:not(:last-of-type) {
     display: block;
   }
 
-  div.ad-wrapper {
+  div.wrapper {
     padding-right: 0;
   }
 }
