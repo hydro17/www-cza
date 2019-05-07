@@ -1,14 +1,14 @@
 :host > div {
   display: grid;
-  grid-template-columns: 180px 408px 180px; 
+  grid-template-columns: 408px; 
   grid-template-rows: auto auto; 
   grid-template-areas: 
-    'contact-left logo contact-right'
-    'ad ad ad';
+  'logo'
+  'ad';
   justify-content: center;
 }
 
-cza-contact:first-child {
+cza-contact:first-of-type {
   grid-area: contact-left;
 }
 
@@ -16,12 +16,18 @@ cza-logo {
   grid-area: logo;
 }
 
-cza-contact:last-child {
+cza-contact:last-of-type {
   grid-area: contact-right;
 }
 
-cza-upper-advertisement {
+div.ad-wrapper {
   grid-area: ad;
+  padding-left: 5px;
+  padding-right: 8px;
+}
+
+cza-contact:first-of-type, cza-contact:last-of-type {
+  display: none;
 }
 
 /* :host>* {
@@ -54,4 +60,38 @@ p:not(:last-of-type) {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+@media only screen and (min-width: 620px) {
+  :host > div {
+    grid-template-columns: 180px 408px; 
+    grid-template-areas: 
+    'contact-left logo'
+    'ad ad';
+  }
+  
+  cza-contact:first-of-type {
+    display: block;
+  }
+
+  div.ad-wrapper {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  :host > div {
+    grid-template-columns: 180px 408px 180px; 
+    grid-template-areas: 
+    'contact-left logo contact-right'
+    'ad ad ad';
+  }
+  
+  cza-contact:last-of-type {
+    display: block;
+  }
+
+  div.ad-wrapper {
+    padding-right: 0;
+  }
 }
