@@ -1,3 +1,7 @@
+:host > cza-frame {
+  height: 100%;
+}
+
 a {
   display: block;
   text-align: center;
