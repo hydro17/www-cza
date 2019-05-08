@@ -1,6 +1,5 @@
 :host > div {
   display: flex;
-  /* align-items: stretch; */
   justify-content: center;
 }
 
@@ -8,14 +7,6 @@
   border: 2px dotted green;
 } */
 
-cza-menu {
-  /* flex-basis: 200px; */
-}
-
 cza-main {
   flex: 1;
-}
-
-cza-sidebar {
-  /* flex-basis: 100px; */
 }
