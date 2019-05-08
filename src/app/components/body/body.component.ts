@@ -6,19 +6,29 @@ import { Component, OnInit, HostListener } from '@angular/core';
   styleUrls: ['./body.component.css']
 })
 export class BodyComponent implements OnInit {
-  private menuVisibility: string = 'none';
+  private menuVisibility: string;
+  private sidebarVisibility: string;
 
   constructor() { }
 
   ngOnInit() {
+    if (window.innerWidth <= 620) {
+      this.menuVisibility = 'none';
+      this.sidebarVisibility = 'none';
+    } else {
+      this.menuVisibility = 'block';
+      this.sidebarVisibility = 'block';
+    }
   }
 
   @HostListener('window:resize', ['$event'])
   onResize(event) {
     if (event.target.innerWidth <= 620) {
       this.menuVisibility = 'none';
+      this.sidebarVisibility = 'none';
     } else {
       this.menuVisibility = 'block';
+      this.sidebarVisibility = 'block';
     }
   }
 
@@ -31,6 +41,20 @@ export class BodyComponent implements OnInit {
   }
 
   onClickInsideMenu(visibility) {
-    this.menuVisibility = visibility;
+    this.menuVisibility = 'none';
+    this.sidebarVisibility = 'none';
+  }
+
+  showSidebar() {
+    if (this.sidebarVisibility === 'none') {
+      this.sidebarVisibility = 'block';
+    } else {
+      this.sidebarVisibility = 'none';
+    }
+  }
+
+  onClickInsideSidebar(visibility) {
+    this.sidebarVisibility = 'none';
+    this.menuVisibility = 'none';
   }
 }

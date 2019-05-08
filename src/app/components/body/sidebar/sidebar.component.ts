@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'cza-sidebar',
@@ -6,11 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent implements OnInit {
-
+  @Output() sidebarVisibility = new EventEmitter<string>();
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  // sidebar disappear if window size <= 620px and clicked sidebr element
+  hideSidebar() {
+    if (window.innerWidth <= 620) {
+      this.sidebarVisibility.emit('none');
+    }
+  }
 }

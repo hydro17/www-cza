@@ -1,9 +1,8 @@
 <div>
   <div id="btn-menu" (click)="showMenu()">MENU</div>
-  <div id="btn-sidebar">PUBLICATIONS</div>
+  <div id="btn-sidebar" (click)="showSidebar()">PUBLICATIONS</div>
 
   <cza-menu [ngStyle]="{display:menuVisibility}" (menuVisibility)="onClickInsideMenu($event)"></cza-menu>
-  <!-- <cza-main [ngStyle]="{display:sidebarVisibility}" (menuVisibility)="onClickInsideSideBar($event)"></cza-main> -->
   <cza-main></cza-main>
-  <cza-sidebar></cza-sidebar>
+  <cza-sidebar [ngStyle]="{display:sidebarVisibility}" (sidebarVisibility)="onClickInsideSidebar($event)"></cza-sidebar>
 </div>
