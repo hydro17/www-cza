@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'cza-menu',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
-  private menuVisibility: string = 'block';
+  @Output() menuVisibility = new EventEmitter<string>();
 
   constructor() { }
 
@@ -15,6 +15,8 @@ export class MenuComponent implements OnInit {
 
   // menu disappear if window size <= 620px and clicked menu element
   hideMenu() {
-    if (window.innerWidth <= 620) { this.menuVisibility = 'none'; }
+    if (window.innerWidth <= 620) {
+      this.menuVisibility.emit('none');
+    }
   }
 }

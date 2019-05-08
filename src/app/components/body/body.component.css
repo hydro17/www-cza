@@ -1,6 +1,6 @@
 :host > div {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 /* :host>*>* {
@@ -8,5 +8,72 @@
 } */
 
 cza-main {
-  flex: 1;
+  flex-grow: 1;
+}
+
+#btn-menu, #btn-sidebar {
+  display: none;
+  background-color: var(--main-color);
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px #aaa;
+  color: #fff;
+  padding: 0.5em 0;
+  cursor: pointer;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+#btn-sidebar {
+  margin-right: 5px;
+}
+
+@media only screen and (max-width: 620px) {
+  #btn-menu, #btn-sidebar {
+    display: block;
+  }
+
+  :host > div {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+      "menu sidebar"
+      "main main"
+      "footer footer";
+    grid-column-gap: 20px;
+    grid-row-gap: 9px;
+  }
+
+  #btn-menu {
+    grid-area: menu;
+  }
+
+  #btn-sidebar {
+    grid-area: sidebar;
+  }
+
+  cza-menu, cza-sidebar {
+    display: none;
+    position: absolute;
+    top: 37px;
+    background-color: var(--background-color);
+    z-index: 10;
+  }
+
+  cza-menu {
+    left: 0;
+  }
+
+  cza-sidebar {
+    right: 0;
+  }
+
+  cza-main {
+    grid-area: main;
+  }
+
+  cza-footer {
+    grid-area: footer;
+  }
 }
