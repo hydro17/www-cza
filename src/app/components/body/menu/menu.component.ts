@@ -6,7 +6,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
-  @Output() menuVisibility = new EventEmitter<string>();
+  @Output() hideMenu = new EventEmitter<string>();
 
   constructor() { }
 
@@ -14,9 +14,9 @@ export class MenuComponent implements OnInit {
   }
 
   // menu disappear if window size <= 620px and clicked menu element
-  hideMenu() {
+  hideComponentMenu() {
     if (window.innerWidth <= 620) {
-      this.menuVisibility.emit('none');
+      this.hideMenu.emit();
     }
   }
 }

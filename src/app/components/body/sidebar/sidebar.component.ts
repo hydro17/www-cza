@@ -6,7 +6,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent implements OnInit {
-  @Output() sidebarVisibility = new EventEmitter<string>();
+  @Output() hideSidebar = new EventEmitter<string>();
 
   constructor() { }
 
@@ -14,9 +14,9 @@ export class SidebarComponent implements OnInit {
   }
 
   // sidebar disappear if window size <= 620px and clicked sidebr element
-  hideSidebar() {
+  hideComponentSidebar() {
     if (window.innerWidth <= 620) {
-      this.sidebarVisibility.emit('none');
+      this.hideSidebar.emit();
     }
   }
 }

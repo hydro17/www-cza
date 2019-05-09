@@ -32,7 +32,7 @@ export class BodyComponent implements OnInit {
     }
   }
 
-  showMenu() {
+  toggleMenu() {
     if (this.menuVisibility === 'none') {
       this.menuVisibility = 'block';
     } else {
@@ -40,12 +40,7 @@ export class BodyComponent implements OnInit {
     }
   }
 
-  onClickInsideMenu(visibility) {
-    this.menuVisibility = 'none';
-    this.sidebarVisibility = 'none';
-  }
-
-  showSidebar() {
+  toggleSidebar() {
     if (this.sidebarVisibility === 'none') {
       this.sidebarVisibility = 'block';
     } else {
@@ -53,7 +48,12 @@ export class BodyComponent implements OnInit {
     }
   }
 
-  onClickInsideSidebar(visibility) {
+  onHideMenu() {
+    this.menuVisibility = 'none';
+    this.sidebarVisibility = 'none';
+  }
+
+  onHideSidebar() {
     this.sidebarVisibility = 'none';
     this.menuVisibility = 'none';
   }
