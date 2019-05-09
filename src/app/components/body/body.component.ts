@@ -6,8 +6,8 @@ import { Component, OnInit, HostListener } from '@angular/core';
   styleUrls: ['./body.component.css']
 })
 export class BodyComponent implements OnInit {
-  private menuVisibility: string;
-  private sidebarVisibility: string;
+  menuVisibility: string;
+  sidebarVisibility: string;
 
   constructor() { }
 
