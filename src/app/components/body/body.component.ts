@@ -27,8 +27,7 @@ export class BodyComponent implements OnInit {
       }
 
     } else {
-      this.menuVisibility = 'block';
-      this.sidebarVisibility = 'block';
+      this.menuVisibility = this.sidebarVisibility = 'block';
     }
   }
 
@@ -49,8 +48,7 @@ export class BodyComponent implements OnInit {
       }
 
     } else {
-      this.menuVisibility = 'block';
-      this.sidebarVisibility = 'block';
+      this.menuVisibility = this.sidebarVisibility = 'block';
     }
   }
 
