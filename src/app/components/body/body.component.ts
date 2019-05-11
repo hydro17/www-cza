@@ -74,17 +74,10 @@ export class BodyComponent implements OnInit {
     }
   }
 
-  onHideMenu() {
+  hideMenuAndSidebar() {
     this.menuVisibility = 'none';
     this.sidebarVisibility = 'none';
     window.sessionStorage.menu = 'invisible';
     window.sessionStorage.sidebar = 'invisible';
-  }
-
-  onHideSidebar() {
-    this.sidebarVisibility = 'none';
-    this.menuVisibility = 'none';
-    window.sessionStorage.sidebar = 'invisible';
-    window.sessionStorage.menu = 'invisible';
   }
 }

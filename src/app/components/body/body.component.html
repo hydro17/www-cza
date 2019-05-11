@@ -2,7 +2,7 @@
   <div id="btn-menu" (click)="toggleMenu()">MENU</div>
   <div id="btn-sidebar" (click)="toggleSidebar()">PUBLIKACJE</div>
 
-  <cza-menu [ngStyle]="{display:menuVisibility}" (hideMenu)="onHideMenu()"></cza-menu>
+  <cza-menu [ngStyle]="{display:menuVisibility}" (hideMenu)="hideMenuAndSidebar()"></cza-menu>
   <cza-main></cza-main>
-  <cza-sidebar [ngStyle]="{display:sidebarVisibility}" (hideSidebar)="onHideSidebar()"></cza-sidebar>
+  <cza-sidebar [ngStyle]="{display:sidebarVisibility}" (hideSidebar)="hideMenuAndSidebar()"></cza-sidebar>
 </div>
