@@ -13,8 +13,19 @@ export class BodyComponent implements OnInit {
 
   ngOnInit() {
     if (window.innerWidth <= 620) {
-      this.menuVisibility = 'none';
-      this.sidebarVisibility = 'none';
+
+      if (window.sessionStorage.menu !== 'visible') {
+        this.menuVisibility = 'none';
+      } else {
+        this.menuVisibility = 'block';
+      }
+
+      if (window.sessionStorage.sidebar !== 'visible') {
+        this.sidebarVisibility = 'none';
+      } else {
+        this.sidebarVisibility = 'block';
+      }
+
     } else {
       this.menuVisibility = 'block';
       this.sidebarVisibility = 'block';
@@ -24,8 +35,19 @@ export class BodyComponent implements OnInit {
   @HostListener('window:resize', ['$event'])
   onResize(event) {
     if (event.target.innerWidth <= 620) {
-      this.menuVisibility = 'none';
-      this.sidebarVisibility = 'none';
+
+      if (window.sessionStorage.menu !== 'visible') {
+        this.menuVisibility = 'none';
+      } else {
+        this.menuVisibility = 'block';
+      }
+
+      if (window.sessionStorage.sidebar !== 'visible') {
+        this.sidebarVisibility = 'none';
+      } else {
+        this.sidebarVisibility = 'block';
+      }
+
     } else {
       this.menuVisibility = 'block';
       this.sidebarVisibility = 'block';
@@ -35,26 +57,34 @@ export class BodyComponent implements OnInit {
   toggleMenu() {
     if (this.menuVisibility === 'none') {
       this.menuVisibility = 'block';
+      window.sessionStorage.menu = 'visible';
     } else {
       this.menuVisibility = 'none';
+      window.sessionStorage.menu = 'invisible';
     }
   }
 
   toggleSidebar() {
     if (this.sidebarVisibility === 'none') {
       this.sidebarVisibility = 'block';
+      window.sessionStorage.sidebar = 'visible';
     } else {
       this.sidebarVisibility = 'none';
+      window.sessionStorage.sidebar = 'invisible';
     }
   }
 
   onHideMenu() {
     this.menuVisibility = 'none';
     this.sidebarVisibility = 'none';
+    window.sessionStorage.menu = 'invisible';
+    window.sessionStorage.sidebar = 'invisible';
   }
 
   onHideSidebar() {
     this.sidebarVisibility = 'none';
     this.menuVisibility = 'none';
+    window.sessionStorage.sidebar = 'invisible';
+    window.sessionStorage.menu = 'invisible';
   }
 }
