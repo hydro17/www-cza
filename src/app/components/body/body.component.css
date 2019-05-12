@@ -15,7 +15,7 @@ cza-main {
   display: none;
   background-color: var(--main-color);
   border-radius: 5px;
-  box-shadow: 3px 3px 3px #aaa;
+  box-shadow: 3px 3px 2px #5555;
   color: var(--background-color);
   padding: 0.5em 0;
   cursor: pointer;
