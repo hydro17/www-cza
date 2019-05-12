@@ -10,22 +10,22 @@
 
 .top-left {
   grid-area: top-left;
-  background-image: url(/assets/images/frame-corner-top-left.gif);
+  background-image: url(/assets/images/permanent/frame-corner-top-left.gif);
 }
 
 .top-center {
   grid-area: top-center;
-  background-image: url(/assets/images/frame-top.gif);
+  background-image: url(/assets/images/permanent/frame-top.gif);
 }
 
 .top-right {
   grid-area: top-right;
-  background-image: url(/assets/images/frame-corner-top-right.gif);
+  background-image: url(/assets/images/permanent/frame-corner-top-right.gif);
 }
 
 .middle-left {
   grid-area: middle-left;
-  background-image: url(/assets/images/frame-side-left.gif);
+  background-image: url(/assets/images/permanent/frame-side-left.gif);
 }
 
 .middle-center {
@@ -42,20 +42,20 @@
 
 .middle-right {
   grid-area: middle-right;
-  background-image: url(/assets/images/frame-side-right.gif);
+  background-image: url(/assets/images/permanent/frame-side-right.gif);
 }
 
 .bottom-left {
   grid-area: bottom-left;
-  background-image: url(/assets/images/frame-corner-bottom-left.gif);
+  background-image: url(/assets/images/permanent/frame-corner-bottom-left.gif);
 }
 
 .bottom-center {
   grid-area: bottom-center;
-  background-image: url(/assets/images/frame-bottom.gif);
+  background-image: url(/assets/images/permanent/frame-bottom.gif);
 }
 
 .bottom-right {
   grid-area: bottom-right;
-  background-image: url(/assets/images/frame-corner-bottom-right.gif);
+  background-image: url(/assets/images/permanent/frame-corner-bottom-right.gif);
 }
