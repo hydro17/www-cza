@@ -42,6 +42,7 @@ import { ArchivalMagazinesComponent } from './components/body/main/content/archi
 import { ContactInfoComponent } from './components/body/main/content/contact-info/contact-info.component';
 import { ElfComponent } from './components/body/main/content/elf/elf.component';
 import { DistinctionsComponent } from './components/body/main/content/distinctions/distinctions.component';
+import { MenuItemComponent } from './components/body/menu/menu-item/menu-item.component';
 
 @NgModule({
   declarations: [
@@ -81,7 +82,8 @@ import { DistinctionsComponent } from './components/body/main/content/distinctio
     ArchivalMagazinesComponent,
     ContactInfoComponent,
     ElfComponent,
-    DistinctionsComponent
+    DistinctionsComponent,
+    MenuItemComponent
   ],
   imports: [
     BrowserModule,

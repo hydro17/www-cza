@@ -1,23 +1,60 @@
 <cza-frame>
   <nav (click)="hideComponentMenu()">
-    <a routerLink="/news">Komunikaty nadzwyczajne</a>
-    <a routerLink="/info-about-cza">Informacje o&nbsp;"Czasopiśmie Aptekarskim"</a>
-    <a routerLink="/scientific-articles-digest">Wybiórka w&nbsp;pigułce</a>
+    <cza-menu-item>
+      <a routerLink="/news">Komunikaty nadzwyczajne</a>
+    </cza-menu-item>
+
+    <cza-menu-item>
+      <a routerLink="/info-about-cza">Informacje o&nbsp;"Czasopiśmie Aptekarskim"</a>
+    </cza-menu-item>
+
+    <cza-menu-item>
+      <a routerLink="/scientific-articles-digest">Wybiórka w&nbsp;pigułce</a>
+    </cza-menu-item>
+
     <!-- <a href="#">Konferencje</a> -->
-    <a routerLink="/distinctions">Medale</a>
-    <a routerLink="/elf">Europejski Laur Farmacji</a>
-    <a href="/assets/pdf/cza-publ-opieka-farm.pdf" style="font-size:0.83em" target="_blank">
-      Bibliografia publikacji nt.&nbsp;opieki farmaceutycznej w&nbsp;"Czasopiśmie Aptekarskim"
-      w&nbsp;latach 2001-2016
-    </a>
-    <a routerLink="/annual-tables-of-contents">SPISY TREŚCI za&nbsp;lata 2011-2017</a>
-    <a routerLink="/subscription">PRENUMERATA</a>
-    <a routerLink="/archival-magazines">Numery archiwalne "Czasopisma Aptekarskiego"</a>
-    <a routerLink="/contact-info">Kontakt</a>
+
+    <cza-menu-item>
+      <a routerLink="/distinctions">Medale</a>
+    </cza-menu-item>
+
+    <cza-menu-item>
+      <a routerLink="/elf">Europejski Laur Farmacji</a>
+    </cza-menu-item>
+
+    <cza-menu-item>
+      <a href="/assets/pdf/cza-publ-opieka-farm.pdf" style="font-size:0.83em" target="_blank">
+        Bibliografia publikacji nt.&nbsp;opieki farmaceutycznej w&nbsp;"Czasopiśmie Aptekarskim"
+        w&nbsp;latach 2001-2016
+      </a>
+    </cza-menu-item>
+
+    <cza-menu-item>
+      <a routerLink="/annual-tables-of-contents">SPISY TREŚCI za&nbsp;lata 2011-2017</a>
+    </cza-menu-item>
+
+    <cza-menu-item>
+      <a routerLink="/subscription">PRENUMERATA</a>
+    </cza-menu-item>
+
+    <cza-menu-item>
+      <a routerLink="/archival-magazines">Numery archiwalne "Czasopisma Aptekarskiego"</a>
+    </cza-menu-item>
+
+    <cza-menu-item>
+      <a routerLink="/contact-info">Kontakt</a>
+    </cza-menu-item>
+
     <!-- <a href="#">Rada Naukowa i&nbsp;Redakcja</a> -->
-    <a routerLink="/rules-for-authors">Regulamin dla Autorów publikacji naukowych</a>
-    <a href="mailto:cza@cza.pl?subject=Pytania, komentarze, uwagi" title="Pytania, komentarze, uwagi">
-      Zgłoszenia niepożądanych działań leków <br> <em>Pytania, komentarze, uwagi</em>
-    </a>
+
+    <cza-menu-item>
+      <a routerLink="/rules-for-authors">Regulamin dla Autorów publikacji naukowych</a>
+    </cza-menu-item>
+
+    <cza-menu-item>
+      <a href="mailto:cza@cza.pl?subject=Pytania, komentarze, uwagi" title="Pytania, komentarze, uwagi">
+        Zgłoszenia niepożądanych działań leków <br> <em>Pytania, komentarze, uwagi</em>
+      </a>
+    </cza-menu-item>
   </nav>
 </cza-frame>
