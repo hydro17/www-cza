@@ -2,7 +2,17 @@
   <div id="btn-menu" (click)="toggleMenu()">MENU</div>
   <div id="btn-sidebar" (click)="toggleSidebar()">PUBLIKACJE</div>
 
-  <cza-menu [ngStyle]="{display:menuVisibility}" (hideMenu)="hideMenuAndSidebar()"></cza-menu>
+  <cza-menu *ngIf="bigScreen; else smallScreenMenu"></cza-menu>
+
+  <ng-template #smallScreenMenu>
+    <cza-menu [ngStyle]="{display:smallScreenMenuDisplay}" (hideMenu)="hideMenuAndSidebar()"></cza-menu>
+  </ng-template>
+
   <cza-main></cza-main>
-  <cza-sidebar [ngStyle]="{display:sidebarVisibility}" (hideSidebar)="hideMenuAndSidebar()"></cza-sidebar>
+
+  <cza-sidebar *ngIf="bigScreen; else smallScreenSidebar"></cza-sidebar>
+
+  <ng-template #smallScreenSidebar>
+    <cza-sidebar [ngStyle]="{display:smallScreenSidebarDisplay}" (hideSidebar)="hideMenuAndSidebar()"></cza-sidebar>
+  </ng-template>
 </div>

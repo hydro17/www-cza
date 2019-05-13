@@ -15,7 +15,7 @@ export class MenuComponent implements OnInit {
 
   // menu disappear if window size <= 620px and clicked menu element
   hideComponentMenu() {
-    if (window.innerWidth <= 620) {
+    if (window.innerWidth <= 710) {
       this.hideMenu.emit();
     }
   }

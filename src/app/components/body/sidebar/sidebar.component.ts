@@ -15,7 +15,7 @@ export class SidebarComponent implements OnInit {
 
   // sidebar disappear if window size <= 620px and clicked sidebr element
   hideComponentSidebar() {
-    if (window.innerWidth <= 620) {
+    if (window.innerWidth <= 710) {
       this.hideSidebar.emit();
     }
   }

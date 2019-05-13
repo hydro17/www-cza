@@ -6,76 +6,49 @@ import { Component, OnInit, HostListener } from '@angular/core';
   styleUrls: ['./body.component.css']
 })
 export class BodyComponent implements OnInit {
-  menuVisibility: string;
-  sidebarVisibility: string;
+  // tslint:disable-next-line:no-inferrable-types
+  smallScreenMenuDisplay: string = 'none';
+  // tslint:disable-next-line:no-inferrable-types
+  smallScreenSidebarDisplay: string = 'none';
+  bigScreen: boolean;
+  private smallScreenWidth = 710;
 
   constructor() { }
 
   ngOnInit() {
-    if (window.innerWidth <= 620) {
-
-      if (window.sessionStorage.menu !== 'visible') {
-        this.menuVisibility = 'none';
-      } else {
-        this.menuVisibility = 'block';
-      }
-
-      if (window.sessionStorage.sidebar !== 'visible') {
-        this.sidebarVisibility = 'none';
-      } else {
-        this.sidebarVisibility = 'block';
-      }
-
+    if (window.innerWidth <= this.smallScreenWidth) {
+      this.bigScreen = false;
     } else {
-      this.menuVisibility = this.sidebarVisibility = 'block';
+      this.bigScreen = true;
     }
   }
 
   @HostListener('window:resize', ['$event'])
   onResize(event) {
-    if (event.target.innerWidth <= 620) {
-
-      if (window.sessionStorage.menu !== 'visible') {
-        this.menuVisibility = 'none';
-      } else {
-        this.menuVisibility = 'block';
-      }
-
-      if (window.sessionStorage.sidebar !== 'visible') {
-        this.sidebarVisibility = 'none';
-      } else {
-        this.sidebarVisibility = 'block';
-      }
-
+    if (event.target.innerWidth <= this.smallScreenWidth) {
+      this.bigScreen = false;
     } else {
-      this.menuVisibility = this.sidebarVisibility = 'block';
+      this.bigScreen = true;
     }
   }
 
   toggleMenu() {
-    if (this.menuVisibility === 'none') {
-      this.menuVisibility = 'block';
-      window.sessionStorage.menu = 'visible';
+    if (this.smallScreenMenuDisplay === 'none') {
+      this.smallScreenMenuDisplay = 'block';
     } else {
-      this.menuVisibility = 'none';
-      window.sessionStorage.menu = 'invisible';
+      this.smallScreenMenuDisplay = 'none';
     }
   }
 
   toggleSidebar() {
-    if (this.sidebarVisibility === 'none') {
-      this.sidebarVisibility = 'block';
-      window.sessionStorage.sidebar = 'visible';
+    if (this.smallScreenSidebarDisplay === 'none') {
+      this.smallScreenSidebarDisplay = 'block';
     } else {
-      this.sidebarVisibility = 'none';
-      window.sessionStorage.sidebar = 'invisible';
+      this.smallScreenSidebarDisplay = 'none';
     }
   }
 
   hideMenuAndSidebar() {
-    this.menuVisibility = 'none';
-    this.sidebarVisibility = 'none';
-    window.sessionStorage.menu = 'invisible';
-    window.sessionStorage.sidebar = 'invisible';
+    this.smallScreenMenuDisplay = this.smallScreenSidebarDisplay = 'none';
   }
 }

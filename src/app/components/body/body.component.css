@@ -31,7 +31,7 @@ cza-main {
   margin-right: 5px;
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 710px) {
   #btn-menu, #btn-sidebar {
     display: block;
   }
@@ -58,7 +58,7 @@ cza-main {
   }
 
   cza-menu, cza-sidebar {
-    display: none;
+    /* display: none; <-- this is set in the 'block' component*/
     position: absolute;
     top: 37px;
     background-color: var(--background-color);
