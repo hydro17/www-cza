@@ -1,4 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import * as myGlobals from '../../globals';
 
 @Component({
   selector: 'cza-body',
@@ -11,12 +12,11 @@ export class BodyComponent implements OnInit {
   // tslint:disable-next-line:no-inferrable-types
   smallScreenSidebarDisplay: string = 'none';
   bigScreen: boolean;
-  private smallScreenWidth = 710;
 
   constructor() { }
 
   ngOnInit() {
-    if (window.innerWidth <= this.smallScreenWidth) {
+    if (window.innerWidth <= myGlobals.smallScreenWidth) {
       this.bigScreen = false;
     } else {
       this.bigScreen = true;
@@ -25,7 +25,7 @@ export class BodyComponent implements OnInit {
 
   @HostListener('window:resize', ['$event'])
   onResize(event) {
-    if (event.target.innerWidth <= this.smallScreenWidth) {
+    if (event.target.innerWidth <= myGlobals.smallScreenWidth) {
       this.bigScreen = false;
     } else {
       this.bigScreen = true;

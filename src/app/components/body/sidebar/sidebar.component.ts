@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import * as myGlobals from '../../../globals';
 
 @Component({
   selector: 'cza-sidebar',
@@ -15,7 +16,7 @@ export class SidebarComponent implements OnInit {
 
   // sidebar disappear if window size <= 620px and clicked sidebr element
   hideComponentSidebar() {
-    if (window.innerWidth <= 710) {
+    if (window.innerWidth <= myGlobals.smallScreenWidth) {
       this.hideSidebar.emit();
     }
   }

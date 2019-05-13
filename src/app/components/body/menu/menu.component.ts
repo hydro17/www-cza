@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import * as myGlobals from '../../../globals';
 
 @Component({
   selector: 'cza-menu',
@@ -15,7 +16,7 @@ export class MenuComponent implements OnInit {
 
   // menu disappear if window size <= 620px and clicked menu element
   hideComponentMenu() {
-    if (window.innerWidth <= 710) {
+    if (window.innerWidth <= myGlobals.smallScreenWidth) {
       this.hideMenu.emit();
     }
   }
