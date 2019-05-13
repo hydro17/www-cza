@@ -3,26 +3,9 @@
 }
 
 nav {
-  width: 124px;
+  width: 140px;
 }
 
 a {
   color: var(--background-color);
 }
-
-/* a {
-  display: block;
-  text-align: center;
-  font-weight: bold;
-  font-size: 0.85em;
-}
-
-a::after {
-  content: url(/assets/images/menu-separator.gif);
-  display: block;
-  margin-top: 0.6em;
-  position: relative;
-  top: 0.07em;
-  transform-origin: left;
-  transform: scaleX(0.95); 
-} */
