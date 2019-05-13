@@ -1,11 +1,9 @@
+@import "./menu-item/menu-item.component.css";
+
 :host > cza-frame {
   height: 100%;
 }
 
 nav {
   width: 140px;
-}
-
-a {
-  color: var(--background-color);
 }
