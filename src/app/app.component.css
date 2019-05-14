@@ -33,7 +33,15 @@
   }
 } */
 
-@media only screen and (min-width: 720px) {
+/* cza-body, cza-footer {
+  flex-grow: 1;
+} */
+
+cza-header {
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 850px) {
   .container {
     width: 95%;
   }
@@ -43,12 +51,4 @@
   .container {
     width: 80%;
   }
-}
-
-cza-header {
-  margin: 0 auto;
-}
-
-cza-body, cza-footer {
-  flex-grow: 1;
 }
