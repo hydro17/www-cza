@@ -24,7 +24,7 @@ div > img {
 }
 
 section::after {
-  content: url(/assets/images/line-with-shadow.gif);
+  content: url(/assets/images/permanent/line-with-shadow.gif);
   display: block;
   margin-top: 0.8em;
 }
