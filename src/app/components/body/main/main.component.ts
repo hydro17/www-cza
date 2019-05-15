@@ -9,7 +9,7 @@ import { trigger, transition, query, style, animate, group, sequence, stagger } 
   animations: [
     trigger('routeAnimations', [
       transition('* => *', [
-        style({ position: 'relative' }),
+        style({ position: 'relative', minHeight: 'calc(100vh - 200px)' }),
         query(':enter, :leave', [
           style({
             position: 'absolute',
@@ -17,19 +17,23 @@ import { trigger, transition, query, style, animate, group, sequence, stagger } 
             left: 0,
             width: '100%'
           })
-        ]),
+        ], { optional: true }),
         sequence([
           query(':enter', [
             style({ opacity: 0 }),
           ], { optional: true }),
 
           query(':leave', [
-            animate('0.2s', style({ opacity: 0 }))
+            animate('0.3s', style({ opacity: 0 }))
           ], { optional: true }),
 
           query(':enter', [
-            animate('0.2s', style({ opacity: 1 }))
-          ], { optional: true })
+            animate('0.3s', style({ opacity: 1 }))
+          ], { optional: true }),
+
+          query(':self', [
+            style({ minHeight: 0 })
+          ])
         ])
       ])
     ])
@@ -45,16 +49,4 @@ export class MainComponent implements OnInit {
   prepareRoute(outlet: RouterOutlet) {
     return outlet && outlet.activatedRouteData && outlet.activatedRouteData.name;
   }
-
-  // showNextArticle(e) {
-  //   const nextElementSibling = e.target.nextElementSibling;
-  //   console.log(nextElementSibling.nodeName);
-
-  //   if (nextElementSibling.getAttribute('class') === null) { return; }
-  //   if (nextElementSibling.getAttribute('class').match(/hidden/g) === null) { return; }
-
-  //   nextElementSibling.addEventListener('animationend', this.showNextArticle);
-  //   nextElementSibling.classList.remove('hidden');
-  //   nextElementSibling.classList.add('show');
-  // }
 }
