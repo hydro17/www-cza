@@ -24,6 +24,7 @@ div.wrapper {
   grid-area: ad;
   padding-left: 5px;
   padding-right: 8px;
+  overflow: hidden;
 }
 
 cza-contact:first-of-type, cza-contact:last-of-type {

@@ -8,7 +8,7 @@ import { trigger, state, style, transition, animate, query } from '@angular/anim
   animations: [
     trigger('openClose', [
       state('true', style({ height: '*' })),
-      state('false', style({ height: '0px' })),
+      state('false', style({ height: '5px' })),
       transition('true <=> false', [
         animate(1000)
       ])
