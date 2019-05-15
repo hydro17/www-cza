@@ -40,7 +40,7 @@ cza-main {
 }
 
 cza-menu, cza-sidebar {
-  /* display: none; <-- this is set in the 'block' component*/
+  /* display: none; <-- this is set in the 'body' component*/
   position: absolute;
   top: 37px;
   background-color: var(--background-color);

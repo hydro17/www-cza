@@ -16,7 +16,7 @@ export class BodyComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    if (window.innerWidth <= myGlobals.smallScreenWidth) {
+    if (window.innerWidth < myGlobals.smallScreenWidth) {
       this.bigScreen = false;
     } else {
       this.bigScreen = true;
@@ -25,7 +25,7 @@ export class BodyComponent implements OnInit {
 
   @HostListener('window:resize', ['$event'])
   onResize(event) {
-    if (event.target.innerWidth <= myGlobals.smallScreenWidth) {
+    if (event.target.innerWidth < myGlobals.smallScreenWidth) {
       this.bigScreen = false;
     } else {
       this.bigScreen = true;
