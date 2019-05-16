@@ -9,7 +9,7 @@ import { trigger, transition, query, style, animate, group, sequence, stagger } 
   animations: [
     trigger('routeAnimations', [
       transition('* => *', [
-        style({ position: 'relative', minHeight: 'calc(100vh - 200px)' }),
+        style({ position: 'relative', minHeight: '100vh' }),
         query(':enter, :leave', [
           style({
             position: 'absolute',
