@@ -10,10 +10,6 @@
   grid-row-gap: 9px;
 }
 
-cza-main {
-  background-color: var(--background-color);
-}
-
 #btn-menu, #btn-sidebar {
   display: block;
   background-color: var(--main-color);

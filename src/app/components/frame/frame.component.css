@@ -8,9 +8,18 @@
     "bottom-left bottom-center bottom-right";
 }
 
+.top-left, .top-center, .top-right, .bottom-left, .bottom-center, .bottom-right {
+  background-repeat: repeat-x;
+}
+
+.middle-left, .middle-center, .middle-right {
+  background-repeat: repeat-y;
+}
+
 .top-left {
   grid-area: top-left;
   background-image: url(/assets/images/permanent/frame-corner-top-left.gif);
+  background-size: auto 100%;
 }
 
 .top-center {
@@ -30,11 +39,6 @@
 
 .middle-center {
   grid-area: middle-center;
-  /* display: flex;
-  flex-direction: column; */
-  /* background-color: rgba(255,0,0,0.3); */
-  /* align-items: stretch; */
-  /* padding-bottom: 0.3em; */
   position: relative;
   bottom: 1px;
   right: 1px;
