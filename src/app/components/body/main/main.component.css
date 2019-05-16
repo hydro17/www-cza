@@ -32,7 +32,6 @@
   }
   
   header {
-    padding: 0 2em;
     text-align: center;
     margin-bottom: 1em;
   }
@@ -85,5 +84,9 @@
     figure:not([style*='width']) > figcaption {
       margin-left: 0.8em;
       text-align: left;
+    }
+
+    header {
+      padding: 0 2em;
     }
   }
