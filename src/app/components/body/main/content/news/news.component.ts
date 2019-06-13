@@ -6,7 +6,6 @@ import { Component, OnInit, ViewChild, ElementRef, HostListener } from '@angular
   styleUrls: ['./news.component.css']
 })
 export class NewsComponent implements OnInit {
-  @ViewChild('gallerySelectionFrame') gallerySelectionFrame: ElementRef;
   @ViewChild('gallerySelectionContainer') gallerySelectionContainer: ElementRef;
 
   constructor() { }
@@ -19,12 +18,23 @@ export class NewsComponent implements OnInit {
   //   this.gallerySelectionContainer.nativeElement.classList.add('hidden');
   // }
 
-  // showSelected(e) {
-  //   // const selectionFrame = this.gallerySelectionFrame.nativeElement;
-  //   const selectionFrame = this.gallerySelectionContainer.nativeElement;
-  //   // this.gallerySelectionContainer.nativeElement.innerHTML = e.target;
-  //   // selectionFrame.appendChild(e.target);
-  //   selectionFrame.innerHTML = '<img src="/assets/images/galleries/krasnobrod/krasnob-dsc0451-300px.jpg" alt="gallery-krasnobrod-1">';
-  //   selectionFrame.classList.remove('hidden');
-  // }
+  showSelected(e) {
+    // const selectionFrame = this.gallerySelectionFrame.nativeElement;
+    // const selectionFrame = this.gallerySelectionContainer.nativeElement;
+    // this.gallerySelectionContainer.nativeElement.innerHTML = e.target;
+    // selectionFrame.appendChild(e.target);
+
+    this.gallerySelectionContainer.nativeElement.querySelector('div').innerHTML = `
+    <img src="${e.target.getAttribute('data-big-img-src')}" alt="gallery-krasnobrod-selected-image">
+    `;
+    this.gallerySelectionContainer.nativeElement.classList.remove('hidden');
+    // this.gallerySelectionContainer.nativeElement.querySeletor('div').classList.remove('hidden');
+
+    // selectionFrame.innerHTML = '<img src="/assets/images/galleries/kras?nobrod/krasnob-dsc0451-300px.jpg" alt="gallery-krasnobrod-1">';
+    // selectionFrame.classList.remove('hidden');
+  }
+
+  hide(domElement) {
+    domElement.classList.add('hidden');
+  }
 }
