@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, HostListener } from '@angular/core';
 
 @Component({
   selector: 'cza-news',
@@ -6,10 +6,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./news.component.css']
 })
 export class NewsComponent implements OnInit {
+  @ViewChild('gallerySelectionFrame') gallerySelectionFrame: ElementRef;
+  @ViewChild('gallerySelectionContainer') gallerySelectionContainer: ElementRef;
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  // @HostListener('window:scroll', ['$event'])
+  // onScroll(event) {
+  //   this.gallerySelectionContainer.nativeElement.classList.add('hidden');
+  // }
+
+  // showSelected(e) {
+  //   // const selectionFrame = this.gallerySelectionFrame.nativeElement;
+  //   const selectionFrame = this.gallerySelectionContainer.nativeElement;
+  //   // this.gallerySelectionContainer.nativeElement.innerHTML = e.target;
+  //   // selectionFrame.appendChild(e.target);
+  //   selectionFrame.innerHTML = '<img src="/assets/images/galleries/krasnobrod/krasnob-dsc0451-300px.jpg" alt="gallery-krasnobrod-1">';
+  //   selectionFrame.classList.remove('hidden');
+  // }
 }

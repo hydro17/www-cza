@@ -74,3 +74,43 @@ article > .footnotes::before {
   display: block;
   margin-top: 0.8em;
 }
+
+.gallery-selection-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 11;
+}
+
+.gallery-selection-container > div {
+  display: flex;
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  margin-top: 1em;
+}
+
+.gallery__item {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--main-color);
+}
+
+.hidden {
+  display: none;
+}
