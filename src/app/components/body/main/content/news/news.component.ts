@@ -17,7 +17,8 @@ export class NewsComponent implements OnInit {
   }
 
   showSelectedGalleryImage(e, gallerySelectedImageContainer) {
-
+    // tslint:disable-next-line:curly
+    if (e.target.nodeName !== 'IMG') return;
 
     // const selectionFrame = this.gallerySelectionFrame.nativeElement;
     // const selectionFrame = this.gallerySelectionContainer.nativeElement;
@@ -28,6 +29,8 @@ export class NewsComponent implements OnInit {
     // <img src="${e.target.getAttribute('data-big-img-src')}" alt="gallery-krasnobrod-selected-image">
     // `;
     // this.gallerySelectionContainer.nativeElement.classList.remove('hidden');
+
+    console.dir(e.target.nodeName);
 
     gallerySelectedImageContainer.querySelector('div').innerHTML = `
     <img src="${e.target.getAttribute('data-big-img-src')}" alt="gallery-krasnobrod-selected-image">
