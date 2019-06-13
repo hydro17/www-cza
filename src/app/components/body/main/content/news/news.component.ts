@@ -6,19 +6,19 @@ import { Component, OnInit, ViewChild, ElementRef, HostListener } from '@angular
   styleUrls: ['./news.component.css']
 })
 export class NewsComponent implements OnInit {
-  // @ViewChild('gallerySelectionContainer') gallerySelectionContainer: ElementRef;
+  @ViewChild('gallerySelectedImageContainer') gallerySelectedImageContainer: ElementRef;
 
   constructor() { }
+  ngOnInit() { }
 
-  ngOnInit() {
+  @HostListener('window:keyup.escape', ['$event'])
+  onKeyUp() {
+    this.gallerySelectedImageContainer.nativeElement.classList.add('hidden');
   }
 
-  // @HostListener('window:scroll', ['$event'])
-  // onScroll(event) {
-  //   this.gallerySelectionContainer.nativeElement.classList.add('hidden');
-  // }
+  showSelectedGalleryImage(e, gallerySelectedImageContainer) {
 
-  showSelected(e, gallerySelectionContainer) {
+
     // const selectionFrame = this.gallerySelectionFrame.nativeElement;
     // const selectionFrame = this.gallerySelectionContainer.nativeElement;
     // this.gallerySelectionContainer.nativeElement.innerHTML = e.target;
@@ -29,10 +29,10 @@ export class NewsComponent implements OnInit {
     // `;
     // this.gallerySelectionContainer.nativeElement.classList.remove('hidden');
 
-    gallerySelectionContainer.querySelector('div').innerHTML = `
+    gallerySelectedImageContainer.querySelector('div').innerHTML = `
     <img src="${e.target.getAttribute('data-big-img-src')}" alt="gallery-krasnobrod-selected-image">
     `;
-    gallerySelectionContainer.classList.remove('hidden');
+    gallerySelectedImageContainer.classList.remove('hidden');
 
     // this.gallerySelectionContainer.nativeElement.querySeletor('div').classList.remove('hidden');
 

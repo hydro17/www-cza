@@ -75,7 +75,7 @@ article > .footnotes::before {
   margin-top: 0.8em;
 }
 
-.gallery-selection-container {
+.gallery-selected-image-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,7 +87,7 @@ article > .footnotes::before {
   z-index: 11;
 }
 
-.gallery-selection-container > div {
+.gallery-selected-image-container > div {
   display: flex;
   border: 1px solid var(--main-color);
   border-radius: 5px;
@@ -109,6 +109,7 @@ article > .footnotes::before {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid var(--main-color);
+  cursor: pointer;
 }
 
 .hidden {

@@ -195,12 +195,13 @@
       historykom farmacji w latach 2017-2019.
     </p>
 
-    <div #gallerySelectionContainer class="gallery-selection-container hidden"
-      (click)="hide(gallerySelectionContainer)">
+    <div #gallerySelectedImageContainer class="gallery-selected-image-container hidden"
+      (click)="hide(gallerySelectedImageContainer)">
+      <!-- gallery - selected image frame -->
       <div></div>
     </div>
 
-    <div class="gallery" (click)="showSelected($event, gallerySelectionContainer)">
+    <div class="gallery" (click)="showSelectedGalleryImage($event, gallerySelectedImageContainer)">
       <div class="gallery__item">
         <img src="/assets/images/galleries/krasnobrod/krasnob-dsc0451-300px.jpg"
           data-big-img-src="/assets/images/galleries/krasnobrod/krasnob-dsc0451-300px.jpg" alt="gallery-krasnobrod-1">
