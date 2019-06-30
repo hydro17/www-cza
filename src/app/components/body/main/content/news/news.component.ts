@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild, ElementRef, HostListener } from '@angular/core';
+import * as myGlobals from 'src/app/globals';
 
 @Component({
   selector: 'cza-news',
@@ -30,11 +31,16 @@ export class NewsComponent implements OnInit {
     // `;
     // this.gallerySelectionContainer.nativeElement.classList.remove('hidden');
 
-    console.dir(e.target.nodeName);
+    if (window.innerWidth < myGlobals.smallScreenWidth) {
+      gallerySelectedImageContainer.querySelector('div').innerHTML = `
+      <img src="${e.target.getAttribute('data-big-img-src')}" style="max-width:300px" alt="gallery-krasnobrod-selected-image">
+      `;
+    } else {
+      gallerySelectedImageContainer.querySelector('div').innerHTML = `
+      <img src="${e.target.getAttribute('data-big-img-src')}" alt="gallery-krasnobrod-selected-image">
+      `;
+    }
 
-    gallerySelectedImageContainer.querySelector('div').innerHTML = `
-    <img src="${e.target.getAttribute('data-big-img-src')}" alt="gallery-krasnobrod-selected-image">
-    `;
     gallerySelectedImageContainer.classList.remove('hidden');
 
     // this.gallerySelectionContainer.nativeElement.querySeletor('div').classList.remove('hidden');
