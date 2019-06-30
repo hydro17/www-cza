@@ -15,7 +15,8 @@
     </div>
   </cza-contact>
 
-  <cza-logo (click)="changeAd()"></cza-logo>
+  <!-- <cza-logo (click)="changeAdVisibility()"></cza-logo> -->
+  <cza-logo></cza-logo>
 
   <cza-contact>
     <div class="contact-container">
@@ -29,7 +30,8 @@
     </div>
   </cza-contact>
 
-  <div [@openClose]="isAdShown" class="wrapper">
+  <!-- <div [@openClose]="isAdShown" class="wrapper"> -->
+  <div [@openClose]="false" class="wrapper">
     <cza-upper-advertisement></cza-upper-advertisement>
   </div>
 </div>
