@@ -21,32 +21,13 @@ export class NewsComponent implements OnInit {
     // tslint:disable-next-line:curly
     if (e.target.nodeName !== 'IMG') return;
 
-    // const selectionFrame = this.gallerySelectionFrame.nativeElement;
-    // const selectionFrame = this.gallerySelectionContainer.nativeElement;
-    // this.gallerySelectionContainer.nativeElement.innerHTML = e.target;
-    // selectionFrame.appendChild(e.target);
+    gallerySelectedImageContainer.querySelector('div').style.maxWidth = `${window.innerWidth * 0.9}px`;
 
-    // this.gallerySelectionContainer.nativeElement.querySelector('div').innerHTML = `
-    // <img src="${e.target.getAttribute('data-big-img-src')}" alt="gallery-krasnobrod-selected-image">
-    // `;
-    // this.gallerySelectionContainer.nativeElement.classList.remove('hidden');
-
-    if (window.innerWidth < myGlobals.smallScreenWidth) {
-      gallerySelectedImageContainer.querySelector('div').innerHTML = `
-      <img src="${e.target.getAttribute('data-big-img-src')}" style="max-width:300px" alt="gallery-krasnobrod-selected-image">
+    gallerySelectedImageContainer.querySelector('div').innerHTML = `
+      <img src="${e.target.getAttribute('data-big-img-src')}" style="width:100%" alt="gallery-krasnobrod-selected-image">
       `;
-    } else {
-      gallerySelectedImageContainer.querySelector('div').innerHTML = `
-      <img src="${e.target.getAttribute('data-big-img-src')}" alt="gallery-krasnobrod-selected-image">
-      `;
-    }
 
     gallerySelectedImageContainer.classList.remove('hidden');
-
-    // this.gallerySelectionContainer.nativeElement.querySeletor('div').classList.remove('hidden');
-
-    // selectionFrame.innerHTML = '<img src="/assets/images/galleries/kras?nobrod/krasnob-dsc0451-300px.jpg" alt="gallery-krasnobrod-1">';
-    // selectionFrame.classList.remove('hidden');
   }
 
   hide(domElement) {
