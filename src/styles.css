@@ -70,3 +70,7 @@ a:hover{
 .fr {
   float: right;
 }
+
+.text-left {
+  text-align: left;
+}
