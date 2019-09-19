@@ -62,8 +62,9 @@ export class MainComponent implements OnInit {
 
   private removeTrailingConjunctions(domObject): void {
     const htmlWithNonBreakingSpaces = domObject.innerHTML
-      .replace(/ [a-zA-Z] /g, (m) => m.match(/ [a-zA-Z]/) + '&nbsp')
-      .replace(/\d r. /g, (m) => m.match(/\d/) + '&nbsp;r. ');
+      .replace(/ [a-zA-Z] [a-zA-Z] /g, (m: string) => m.match(/ [a-zA-Z] [a-zA-Z]/) + '&nbsp;')
+      .replace(/ [a-zA-Z] /g, (m: string) => m.match(/ [a-zA-Z]/) + '&nbsp;')
+      .replace(/\d r\. /g, (m: string) => m.match(/\d/) + '&nbsp;r. ');
     domObject.innerHTML = htmlWithNonBreakingSpaces;
   }
 }
