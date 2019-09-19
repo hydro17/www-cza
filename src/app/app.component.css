@@ -56,3 +56,9 @@ cza-header {
     width: 85%;
   }
 }
+
+@media only screen and (min-width: 1300px) {
+  .container {
+    width: 80%;
+  }
+}
