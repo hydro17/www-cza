@@ -41,7 +41,7 @@ import { filter } from 'rxjs/operators';
   ]
 })
 export class MainComponent implements OnInit {
-  @ViewChild('routerOutlet') routerOutlet: ElementRef;
+  @ViewChild('routerOutlet', { static: true }) routerOutlet: ElementRef;
 
   constructor(public router: Router) {
     router.events.pipe(

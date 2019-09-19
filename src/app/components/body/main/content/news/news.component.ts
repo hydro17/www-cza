@@ -7,7 +7,7 @@ import * as myGlobals from 'src/app/globals';
   styleUrls: ['./news.component.css']
 })
 export class NewsComponent implements OnInit {
-  @ViewChild('gallerySelectedImageContainer') gallerySelectedImageContainer: ElementRef;
+  @ViewChild('gallerySelectedImageContainer', { static: false }) gallerySelectedImageContainer: ElementRef;
 
   constructor() { }
   ngOnInit() { }
