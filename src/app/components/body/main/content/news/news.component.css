@@ -5,6 +5,18 @@ article > p {
   margin: 0.4em 0;
 }
 
+article > p.mt-3 {
+  margin-top: 1em;
+}
+
+article > p.mt-3a {
+  margin-top: 1.25em;
+}
+
+article > p.mt-4 {
+  margin-top: 1.5em;
+}
+
 header > h2 {
   font-size: 1.4em;
   margin-bottom: 0.5em;
@@ -121,4 +133,18 @@ article > .footnotes::before {
   column-width: 330px;
   column-gap: 1.2em;
   text-align: justify;
+}
+
+.multi-img-narrow {
+  display:grid; 
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1em; 
+  justify-items: center; 
+}
+
+.multi-img-medium {
+  display:grid; 
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 1em; 
+  justify-items: center; 
 }
