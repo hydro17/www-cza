@@ -135,16 +135,16 @@ article > .footnotes::before {
   text-align: justify;
 }
 
-.multi-img-narrow {
+.multi-img-narrow, .multi-img-medium {
   display:grid; 
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 1em; 
+  gap: 1em;
   justify-items: center; 
 }
 
+.multi-img-narrow {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
 .multi-img-medium {
-  display:grid; 
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  grid-gap: 1em; 
-  justify-items: center; 
 }
