@@ -146,5 +146,5 @@ article > .footnotes::before {
 }
 
 .multi-img-medium {
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(var(--multi-img-medium-min-width), 1fr));
 }
