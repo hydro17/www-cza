@@ -57,7 +57,7 @@ cza-main {
   grid-area: main;
 }
 
-@media only screen and (min-width: 780px) {
+@media only screen and (min-width: 710px) {
   :host > div {
     display: flex;
   }

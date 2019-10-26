@@ -1,3 +1,3 @@
 'use strict';
 
-export const smallScreenWidth = 780;
+export const smallScreenWidth = 710;
