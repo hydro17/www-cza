@@ -148,3 +148,7 @@ article > .footnotes::before {
 .multi-img-medium {
   grid-template-columns: repeat(auto-fit, minmax(var(--multi-img-medium-min-width), 1fr));
 }
+
+.more-in-cza {
+  font-size: 0.95em;
+}
