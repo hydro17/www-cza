@@ -128,13 +128,6 @@ article > .footnotes::before {
   display: none;
 }
 
-.multi-column-3 {
-  column-count: 3;
-  column-width: 330px;
-  column-gap: 1.2em;
-  text-align: justify;
-}
-
 .multi-img-narrow, .multi-img-medium {
   display:grid; 
   gap: 1em;
