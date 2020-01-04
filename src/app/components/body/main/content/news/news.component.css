@@ -154,10 +154,24 @@ article > .footnotes::before {
 
 .wishes-text {
   position: absolute;
-  font-size: 1.8rem;
+  font-size: 4.7vw;
   font-style: italic;
   font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: right;
-  line-height: 2.5rem;
+  line-height: 7vw;
   color: var(--background-color);
+}
+
+@media screen and (min-width: 710px) {
+  .wishes-text {
+    font-size: 3vw;
+    line-height: 4.5vw;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .wishes-text {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
 }
