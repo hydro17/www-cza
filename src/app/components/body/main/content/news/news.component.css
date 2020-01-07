@@ -67,6 +67,11 @@ article, section {
   border-bottom: none;
 }
 
+article:first-child, 
+section:first-child {
+  margin-top: 0.5em;
+}
+
 article:not(:last-child),
 section:not(:last-child) {
   padding-bottom: 20px;
@@ -149,7 +154,6 @@ article > .footnotes::before {
 .wishes-image {
   display: block;
   position: absolute;
-
 }
 
 .wishes-text {
