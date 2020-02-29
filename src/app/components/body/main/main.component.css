@@ -136,6 +136,7 @@
     }
 
     .img-near-text {
-      order: 2
+      order: 2;
+      flex-shrink: 0;
     }
   }
