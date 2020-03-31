@@ -6,6 +6,7 @@
 
 :root {
   --background-color: #fff9c6;
+  --background-color-lighter: #fdfadf;
   --main-color: #734a00;
   --main-color-lighter: #b97a00;
   --main-color-less-lighter: #8d5c00;
@@ -65,6 +66,10 @@ a:hover{
 
 .mt-1 {
   margin-top: 0.25rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .mt-3 {
