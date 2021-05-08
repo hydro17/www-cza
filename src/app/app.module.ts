@@ -44,6 +44,7 @@ import { ContactInfoComponent } from './components/body/main/content/contact-inf
 import { ElfComponent } from './components/body/main/content/elf/elf.component';
 import { DistinctionsComponent } from './components/body/main/content/distinctions/distinctions.component';
 import { MenuItemComponent } from './components/body/menu/menu-item/menu-item.component';
+import { FilozofiaFarmacjiComponent } from './components/body/main/content/order/book/filozofia-farmacji/filozofia-farmacji.component';
 
 @NgModule({
   declarations: [
@@ -84,7 +85,8 @@ import { MenuItemComponent } from './components/body/menu/menu-item/menu-item.co
     ContactInfoComponent,
     ElfComponent,
     DistinctionsComponent,
-    MenuItemComponent
+    MenuItemComponent,
+    FilozofiaFarmacjiComponent
   ],
   imports: [
     BrowserModule,
