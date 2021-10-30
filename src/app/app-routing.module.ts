@@ -9,6 +9,7 @@ import { SubscriptionComponent } from './components/body/main/content/subscripti
 // tslint:disable-next-line:max-line-length
 import { SlownikJakosciZyciaComponent } from './components/body/main/content/order/book/slownik-jakosci-zycia/slownik-jakosci-zycia.component';
 import { SkulskiComponent } from './components/body/main/content/order/book/skulski/skulski.component';
+import { KosmetykiBezTajemnicComponent } from './components/body/main/content/order/book/kosmetyki-bez-tajemnic/kosmetyki-bez-tajemnic.component';
 import { FilozofiaFarmacjiComponent } from './components/body/main/content/order/book/filozofia-farmacji/filozofia-farmacji.component';
 import { MarszallProblemyComponent } from './components/body/main/content/order/book/marszall-problemy/marszall-problemy.component';
 import { MarszallPolstalychComponent } from './components/body/main/content/order/book/marszall-polstalych/marszall-polstalych.component';
@@ -45,6 +46,7 @@ const routes: Routes = [
   { path: 'order-book-marszall-problemy', component: MarszallProblemyComponent, data: { name: 'order-book-marszall-problemy' } },
   { path: 'order-book-skulski', component: SkulskiComponent, data: { name: 'order-book-skulski' } },
   { path: 'order-book-filozofia-farmacji', component: FilozofiaFarmacjiComponent, data: { name: 'order-book-filozofia-farmacji' } },
+  { path: 'order-book-kosmetyki-bez-tajemnic', component: KosmetykiBezTajemnicComponent, data: { name: 'order-book-kosmetyki-bez-tajemnic' } },
   { path: 'order-book-slownik-jakosci-zycia', component: SlownikJakosciZyciaComponent, data: { name: 'order-book-slownik-jakosci-zycia' } },
   { path: 'subscription', component: SubscriptionComponent, data: { name: 'subscription' } },
   { path: 'annual-tables-of-contents', component: AnnualTablesOfContentsComponent, data: { name: 'annual-tables-of-contents' } },

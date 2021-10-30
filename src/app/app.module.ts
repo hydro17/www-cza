@@ -45,6 +45,7 @@ import { ElfComponent } from './components/body/main/content/elf/elf.component';
 import { DistinctionsComponent } from './components/body/main/content/distinctions/distinctions.component';
 import { MenuItemComponent } from './components/body/menu/menu-item/menu-item.component';
 import { FilozofiaFarmacjiComponent } from './components/body/main/content/order/book/filozofia-farmacji/filozofia-farmacji.component';
+import { KosmetykiBezTajemnicComponent } from './components/body/main/content/order/book/kosmetyki-bez-tajemnic/kosmetyki-bez-tajemnic.component';
 
 @NgModule({
   declarations: [
@@ -86,7 +87,8 @@ import { FilozofiaFarmacjiComponent } from './components/body/main/content/order
     ElfComponent,
     DistinctionsComponent,
     MenuItemComponent,
-    FilozofiaFarmacjiComponent
+    FilozofiaFarmacjiComponent,
+    KosmetykiBezTajemnicComponent
   ],
   imports: [
     BrowserModule,
