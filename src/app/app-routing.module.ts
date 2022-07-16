@@ -28,6 +28,7 @@ import { NewsComponent } from './components/body/main/content/news/news.componen
 
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { RodoComponent } from './components/body/main/content/rodo/rodo.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/news', pathMatch: 'full' },
@@ -54,6 +55,7 @@ const routes: Routes = [
   { path: 'archival-magazines', component: ArchivalMagazinesComponent, data: { name: 'archival-magazines' } },
   { path: 'contact-info', component: ContactInfoComponent, data: { name: 'contact-info' } },
   { path: 'elf', component: ElfComponent, data: { name: 'elf' } },
+  { path: 'rodo', component: RodoComponent, data: { name: 'rodo' } },
   { path: 'distinctions', component: DistinctionsComponent, data: { name: 'distinctions' } },
   { path: '**', component: NewsComponent, data: { name: '**' } }
 ];

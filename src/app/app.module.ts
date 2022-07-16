@@ -46,6 +46,7 @@ import { DistinctionsComponent } from './components/body/main/content/distinctio
 import { MenuItemComponent } from './components/body/menu/menu-item/menu-item.component';
 import { FilozofiaFarmacjiComponent } from './components/body/main/content/order/book/filozofia-farmacji/filozofia-farmacji.component';
 import { KosmetykiBezTajemnicComponent } from './components/body/main/content/order/book/kosmetyki-bez-tajemnic/kosmetyki-bez-tajemnic.component';
+import { RodoComponent } from './components/body/main/content/rodo/rodo.component';
 
 @NgModule({
   declarations: [
@@ -88,7 +89,8 @@ import { KosmetykiBezTajemnicComponent } from './components/body/main/content/or
     DistinctionsComponent,
     MenuItemComponent,
     FilozofiaFarmacjiComponent,
-    KosmetykiBezTajemnicComponent
+    KosmetykiBezTajemnicComponent,
+    RodoComponent
   ],
   imports: [
     BrowserModule,
